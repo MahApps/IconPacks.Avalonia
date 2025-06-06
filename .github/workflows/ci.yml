@@ -5,10 +5,9 @@ on:
   push:
     branches:
       - main
-      - develop
   pull_request:
     branches:
-      - develop
+      - main
 
 jobs:
   windows-latest:
