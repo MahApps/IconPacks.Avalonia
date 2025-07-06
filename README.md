@@ -176,7 +176,7 @@ Add the styles to the Applications styles
 
 `avares://IconPacks.Avalonia/Icons.axaml` should be used when using the main `IconPacks.Avalonia` NuGet package.
 
-All other has the naming scheme `avares://IconPacks.Avalonia.<PACKAGENAME>/Icons.axaml`
+All other has the naming scheme `avares://IconPacks.Avalonia.<PACKAGENAME>/<PACKAGENAME>.axaml`
 
 #### The PackIcon controls
 The `PackIcon` controls are the main featured controls to use an icon from an IconPack in a simple way.
