@@ -6,7 +6,7 @@
   </a>
   <h1>IconPacks.Avalonia</h1>
   <p>
-    Awesome icon packs for <code>Avalonia</code> in one library
+    Really awesome icon packs for <code>Avalonia</code> in one library
   </p>
   <p>
     Supporting a wide range of platforms such as Windows, macOS, Linux, iOS, Android and WebAssembly.
@@ -25,9 +25,9 @@
 
 </div>
 
-This `IconPacks` library contains controls, markup extensions and converters to use these awesome icons in a simple way.
+The `IconPacks` packages contains controls, markup extensions and converters to use these awesome icons with your [Avalonia](https://avaloniaui.net/) applications in a simple way.
 
-The same icons are also available for `WPF` and `UWP` at [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) which makes your `WPF` and `UWP` applications nicer.
+The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) packages which makes your `WPF` and `UWP` applications nicer.
 
 | Icon collection | Version | &#8721; | NuGet |
 |---|--:|--:|:--|
@@ -174,9 +174,17 @@ Add the styles to the Applications styles
     </Application.Styles>
 ```
 
-`avares://IconPacks.Avalonia/Icons.axaml` should be used when using the main `IconPacks.Avalonia` NuGet package.
+The resource `avares://IconPacks.Avalonia/Icons.axaml` should be used when using the main `IconPacks.Avalonia` NuGet package which contains all icons.
 
 All other has the naming scheme `avares://IconPacks.Avalonia.<PACKAGENAME>/<PACKAGENAME>.axaml`
+```xml
+    <Application.Styles>
+        <FluentTheme />
+
+        <StyleInclude Source="avares://IconPacks.Avalonia.<PACKAGENAME>/<PACKAGENAME>.axaml" />
+    </Application.Styles>
+```
+
 
 #### The PackIcon controls
 The `PackIcon` controls are the main featured controls to use an icon from an IconPack in a simple way.
