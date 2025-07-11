@@ -65,7 +65,31 @@ namespace IconPacks.Avalonia
         {
             string data = null;
             DataIndex.Value?.TryGetValue(kind, out data);
-            return data;
+
+            // For some icons we need to flip them 
+            switch (kind)
+            {
+                case PackIconBootstrapIconsKind:
+                case PackIconBoxIconsKind:
+                case PackIconCodiconsKind:
+                case PackIconCooliconsKind:
+                case PackIconEvaIconsKind:
+                case PackIconFileIconsKind:
+                case PackIconFontaudioKind:
+                case PackIconFontistoKind:
+                case PackIconForkAwesomeKind:
+                case PackIconJamIconsKind:
+                case PackIconLucideKind:
+                case PackIconRPGAwesomeKind:
+                case PackIconTypiconsKind:
+                case PackIconVaadinIconsKind:
+                    var skPath = SKPath.ParseSvgPathData(data);
+                    skPath.Transform(SKMatrix.CreateScale(1,-1));
+                    return skPath.ToSvgPathData();
+                
+                default:
+                    return data;
+            }
         }
 
         public static async Task<Bitmap> GetIconAsBitmapAsync(Enum kind, Color foreground, int width = 48, int height = 48)
@@ -90,31 +114,10 @@ namespace IconPacks.Avalonia
                     if (width < 0) width = (int)(Math.Ceiling(originalBounds.Width));
                     if (height < 0) height = (int)(Math.Ceiling(originalBounds.Height));
 
-                    float scaleX, scaleY;
-                    scaleX = scaleY = Math.Min(width / originalBounds.Width, height / originalBounds.Height);
-
-                    // For some icons we need to flip them 
-                    switch (kind)
-                    {
-                        case PackIconBootstrapIconsKind:
-                        case PackIconBoxIconsKind:
-                        case PackIconCodiconsKind:
-                        case PackIconCooliconsKind:
-                        case PackIconEvaIconsKind:
-                        case PackIconFileIconsKind:
-                        case PackIconFontaudioKind:
-                        case PackIconFontistoKind:
-                        case PackIconForkAwesomeKind:
-                        case PackIconJamIconsKind:
-                        case PackIconLucideKind:
-                        case PackIconRPGAwesomeKind:
-                        case PackIconTypiconsKind:
-                        case PackIconVaadinIconsKind:
-                            scaleY *= -1;
-                            break;
-                    }
+                    float scale = Math.Min(width / originalBounds.Width, height / originalBounds.Height);
                     
-                    skPath.Transform(SKMatrix.CreateScale(scaleX, scaleY));
+                    
+                    skPath.Transform(SKMatrix.CreateScale(scale, scale));
                     skPath.Transform(SKMatrix.CreateTranslation( 
                         - skPath.Bounds.Left + (width - skPath.Bounds.Width ) / 2,
                         - skPath.Bounds.Top + (height - skPath.Bounds.Height ) / 2 ));
@@ -132,7 +135,7 @@ namespace IconPacks.Avalonia
                         case PackIconFeatherIconsKind:
                             skPaint.IsStroke = true;
                             skPaint.StrokeCap = SKStrokeCap.Round;
-                            skPaint.StrokeWidth = 2 * scaleX;
+                            skPaint.StrokeWidth = 2 * scale;
                             break;
                     }
 
