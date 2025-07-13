@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);MINGCUTEICONS</DefineConstants>
+        <IconsName>MingCuteIcons</IconsName>
+        <AssemblyName>IconPacks.Avalonia.MingCuteIcons</AssemblyName>
+        <Title>IconPacks.Avalonia.MingCuteIcons</Title>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\IconPacks.Avalonia.Core\IconPacks.Avalonia.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Resources/**" />
+    </ItemGroup>
+
+</Project>
