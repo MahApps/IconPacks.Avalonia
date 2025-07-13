@@ -24,6 +24,7 @@ using IconPacks.Avalonia.MaterialLight;
 using IconPacks.Avalonia.MaterialDesign;
 using IconPacks.Avalonia.MemoryIcons;
 using IconPacks.Avalonia.Microns;
+using IconPacks.Avalonia.MingCuteIcons;
 using IconPacks.Avalonia.Modern;
 using IconPacks.Avalonia.Octicons;
 using IconPacks.Avalonia.PhosphorIcons;
@@ -80,6 +81,7 @@ namespace IconPacks.Avalonia
                 PackIconMaterialDesignKind kind => this.GetPackIcon<PackIconMaterialDesign, PackIconMaterialDesignKind>(kind),
                 PackIconMemoryIconsKind kind => this.GetPackIcon<PackIconMemoryIcons, PackIconMemoryIconsKind>(kind),
                 PackIconMicronsKind kind => this.GetPackIcon<PackIconMicrons, PackIconMicronsKind>(kind),
+                PackIconMingCuteIconsKind kind => this.GetPackIcon<PackIconMingCuteIcons, PackIconMingCuteIconsKind>(kind),
                 PackIconModernKind kind => this.GetPackIcon<PackIconModern, PackIconModernKind>(kind),
                 PackIconOcticonsKind kind => this.GetPackIcon<PackIconOcticons, PackIconOcticonsKind>(kind),
                 PackIconPhosphorIconsKind kind => this.GetPackIcon<PackIconPhosphorIcons, PackIconPhosphorIconsKind>(kind),
