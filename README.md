@@ -31,7 +31,7 @@ The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.Ic
 
 | Icon collection | Version | &#8721; | NuGet |
 |---|--:|--:|:--|
-| Complete IconPacks collection with all Icons in one package | | 58895 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
+| Complete IconPacks collection with all Icons in one package | | 61439 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
 | [Bootstrap Icons](https://icons.getbootstrap.com/) | 1.13.1 | 2078 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BootstrapIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BootstrapIcons.svg?style=flat-square&&label=BootstrapIcons"></a> |
 | [Boxicons](https://boxicons.com/) | 2.1.4 | 1634 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BoxIcons.svg?style=flat-square&&label=BoxIcons"></a> |
 | [Circum Icons Free](https://github.com/Klarr-Agency/Circum-Icons) | 2.0.2 | 288 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.CircumIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.CircumIcons.svg?style=flat-square&&label=CircumIcons"></a> |
@@ -56,6 +56,7 @@ The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.Ic
 | [Microns](https://github.com/stephenhutchings/microns) | 1.1.4 | 164 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Microns/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Microns.svg?style=flat-square&&label=Microns"></a> |
 | [MingCute Icon](https://github.com/Richard9394/MingCute) | 2.9.6 | 3098 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.MingCuteIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.MingCuteIcons.svg?style=flat-square&&label=MingCuteIcons"></a> |
 | [Modern UI Icons](https://github.com/Templarian/WindowsIcons) | Feb 12, 2015 | 1260 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Modern/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Modern.svg?style=flat-square&&label=Modern"></a> |
+| [MynaUI Icons](https://github.com/praveenjuge/mynaui-icons) | 0.3.9 | 2544 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.MynaUIIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.MynaUIIcons.svg?style=flat-square&&label=MynaUIIcons"></a> |
 | [Primer Octicons (GitHub)](https://github.com/primer/octicons) | 19.15.3 | 651 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Octicons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Octicons.svg?style=flat-square&&label=Octicons"></a> |
 | [Phosphor Icons](https://phosphoricons.com/) | 2.1.1 | 7560 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.PhosphorIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.PhosphorIcons.svg?style=flat-square&&label=PhosphorIcons"></a> |
 | [PICOL Icons](https://github.com/PicolSigns/Icons) | 1.1.0 | 549 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.PicolIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.PicolIcons.svg?style=flat-square&&label=PicolIcons"></a> |
@@ -102,6 +103,7 @@ IconPacks.Avalonia is delivered via NuGet package manager. You can find the pack
 - [IconPacks.Avalonia.Microns](https://www.nuget.org/packages/IconPacks.Avalonia.Microns/)
 - [IconPacks.Avalonia.MingCuteIcons](https://www.nuget.org/packages/IconPacks.Avalonia.MingCuteIcons/)
 - [IconPacks.Avalonia.Modern](https://www.nuget.org/packages/IconPacks.Avalonia.Modern/)
+- [IconPacks.Avalonia.MynaUIIcons](https://www.nuget.org/packages/IconPacks.Avalonia.MynaUIIcons/)
 - [IconPacks.Avalonia.Octicons](https://www.nuget.org/packages/IconPacks.Avalonia.Octicons/)
 - [IconPacks.Avalonia.PhosphorIcons](https://www.nuget.org/packages/IconPacks.Avalonia.PhosphorIcons/)
 - [IconPacks.Avalonia.PicolIcons](https://www.nuget.org/packages/IconPacks.Avalonia.PicolIcons/)
@@ -146,6 +148,7 @@ Install-Package IconPacks.Avalonia.MemoryIcons
 Install-Package IconPacks.Avalonia.Microns
 Install-Package IconPacks.Avalonia.MingCuteIcons
 Install-Package IconPacks.Avalonia.Modern
+Install-Package IconPacks.Avalonia.MynaUIIcons
 Install-Package IconPacks.Avalonia.Octicons
 Install-Package IconPacks.Avalonia.PhosphorIcons
 Install-Package IconPacks.Avalonia.PicolIcons

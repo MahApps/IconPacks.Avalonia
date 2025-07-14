@@ -36,6 +36,7 @@
         <ProjectReference Include="..\IconPacks.Avalonia.Microns\IconPacks.Avalonia.Microns.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.MingCuteIcons\IconPacks.Avalonia.MingCuteIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Modern\IconPacks.Avalonia.Modern.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.MynaUIIcons\IconPacks.Avalonia.MynaUIIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Octicons\IconPacks.Avalonia.Octicons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.PhosphorIcons\IconPacks.Avalonia.PhosphorIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.PicolIcons\IconPacks.Avalonia.PicolIcons.csproj" />

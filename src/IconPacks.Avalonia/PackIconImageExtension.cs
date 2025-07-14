@@ -26,6 +26,7 @@ using IconPacks.Avalonia.MemoryIcons;
 using IconPacks.Avalonia.Microns;
 using IconPacks.Avalonia.MingCuteIcons;
 using IconPacks.Avalonia.Modern;
+using IconPacks.Avalonia.MynaUIIcons;
 using IconPacks.Avalonia.Octicons;
 using IconPacks.Avalonia.PhosphorIcons;
 using IconPacks.Avalonia.PicolIcons;
@@ -138,6 +139,9 @@ namespace IconPacks.Avalonia
                 case PackIconModernKind kind:
                     PackIconDataFactory<PackIconModernKind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
+                case PackIconMynaUIIconsKind kind:
+                    PackIconDataFactory<PackIconMynaUIIconsKind>.DataIndex.Value?.TryGetValue(kind, out data);
+                    return data;
                 case PackIconOcticonsKind kind:
                     PackIconDataFactory<PackIconOcticonsKind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
@@ -199,6 +203,7 @@ namespace IconPacks.Avalonia
                 case PackIconJamIconsKind:
                 case PackIconLucideKind:
                 case PackIconMingCuteIconsKind:
+                case PackIconMynaUIIconsKind:
                 case PackIconRPGAwesomeKind:
                 case PackIconTypiconsKind:
                 case PackIconVaadinIconsKind:

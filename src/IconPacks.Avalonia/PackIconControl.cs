@@ -26,6 +26,7 @@ using IconPacks.Avalonia.MemoryIcons;
 using IconPacks.Avalonia.Microns;
 using IconPacks.Avalonia.MingCuteIcons;
 using IconPacks.Avalonia.Modern;
+using IconPacks.Avalonia.MynaUIIcons;
 using IconPacks.Avalonia.Octicons;
 using IconPacks.Avalonia.PhosphorIcons;
 using IconPacks.Avalonia.PicolIcons;
@@ -173,6 +174,10 @@ namespace IconPacks.Avalonia
 
                 case PackIconModernKind:
                     UpdateIconPseudoClasses(true, false, false);
+                    break;
+
+                case PackIconMynaUIIconsKind:
+                    UpdateIconPseudoClasses(true, false, true);
                     break;
 
                 case PackIconOcticonsKind:
