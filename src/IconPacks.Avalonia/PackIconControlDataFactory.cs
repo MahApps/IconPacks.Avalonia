@@ -28,6 +28,7 @@ using IconPacks.Avalonia.MemoryIcons;
 using IconPacks.Avalonia.Microns;
 using IconPacks.Avalonia.MingCuteIcons;
 using IconPacks.Avalonia.Modern;
+using IconPacks.Avalonia.MynaUIIcons;
 using IconPacks.Avalonia.Octicons;
 using IconPacks.Avalonia.PhosphorIcons;
 using IconPacks.Avalonia.PicolIcons;
@@ -83,6 +84,7 @@ namespace IconPacks.Avalonia
             Parallel.ForEach(PackIconDataFactory<PackIconMicronsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconMingCuteIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconModernKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
+            Parallel.ForEach(PackIconDataFactory<PackIconMynaUIIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconOcticonsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconPhosphorIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconPicolIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });

@@ -33,6 +33,7 @@
     <StyleInclude Source="avares://IconPacks.Avalonia.Microns/Microns.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.MingCuteIcons/MingCuteIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Modern/Modern.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.MynaUIIcons/MynaUIIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Octicons/Octicons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.PhosphorIcons/PhosphorIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.PicolIcons/PicolIcons.axaml" />
