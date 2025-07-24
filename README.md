@@ -31,7 +31,7 @@ The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.Ic
 
 | Icon collection | Version | &#8721; | NuGet |
 |---|--:|--:|:--|
-| Complete IconPacks collection with all Icons in one package | | 61481 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
+| Complete IconPacks collection with all Icons in one package | | 65181 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
 | [Bootstrap Icons](https://icons.getbootstrap.com/) | 1.13.1 | 2078 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BootstrapIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BootstrapIcons.svg?style=flat-square&&label=BootstrapIcons"></a> |
 | [Boxicons](https://boxicons.com/) | 2.1.4 | 1634 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BoxIcons.svg?style=flat-square&&label=BoxIcons"></a> |
 | [Circum Icons Free](https://github.com/Klarr-Agency/Circum-Icons) | 2.0.2 | 288 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.CircumIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.CircumIcons.svg?style=flat-square&&label=CircumIcons"></a> |
@@ -42,7 +42,9 @@ The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.Ic
 | [Feather Icons](https://feathericons.com/) | 4.29.1 | 287 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.FeatherIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.FeatherIcons.svg?style=flat-square&&label=FeatherIcons"></a> |
 | [File Icons](https://github.com/file-icons/icons) | 2.1.47 | 920 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.FileIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.FileIcons.svg?style=flat-square&&label=FileIcons"></a> |
 | [Fontaudio](https://github.com/fefanto/fontaudio) | 1.1.0 | 155 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Fontaudio/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Fontaudio.svg?style=flat-square&&label=Fontaudio"></a> |
-| [Font Awesome Free](https://fontawesome.com/) | 6.7.2 | 2060 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.FontAwesome.svg?style=flat-square&&label=FontAwesome"></a> |
+| [Font Awesome Free v5](https://fontawesome.com/) | 5.15.4 | 1611 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome5/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.FontAwesome5.svg?style=flat-square&&label=FontAwesome5"></a> |
+| [Font Awesome Free v6](https://fontawesome.com/) | 6.7.2 | 2060 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome6/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.FontAwesome6.svg?style=flat-square&&label=FontAwesome6"></a> |
+| [Font Awesome Free v7](https://fontawesome.com/) | 7.0.0 | 2089 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.FontAwesome.svg?style=flat-square&&label=FontAwesome"></a> |
 | [Fontisto](https://github.com/kenangundogan/fontisto) | 3.0.4 | 616 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Fontisto/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Fontisto.svg?style=flat-square&&label=Fontisto"></a> |
 | [Fork Awesome](https://forkaweso.me/) | 1.2.0 | 794 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.ForkAwesome/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.ForkAwesome.svg?style=flat-square&&label=ForkAwesome"></a> |
 | [Game Icons](https://github.com/game-icons/icons) | May 4, 2025 | 4170 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.GameIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.GameIcons.svg?style=flat-square&&label=GameIcons"></a> |
@@ -89,6 +91,8 @@ IconPacks.Avalonia is delivered via NuGet package manager. You can find the pack
 - [IconPacks.Avalonia.FeatherIcons](https://www.nuget.org/packages/IconPacks.Avalonia.FeatherIcons/)
 - [IconPacks.Avalonia.FileIcons](https://www.nuget.org/packages/IconPacks.Avalonia.FileIcons/)
 - [IconPacks.Avalonia.Fontaudio](https://www.nuget.org/packages/IconPacks.Avalonia.Fontaudio/)
+- [IconPacks.Avalonia.FontAwesome5](https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome5/)
+- [IconPacks.Avalonia.FontAwesome6](https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome6/)
 - [IconPacks.Avalonia.FontAwesome](https://www.nuget.org/packages/IconPacks.Avalonia.FontAwesome/)
 - [IconPacks.Avalonia.Fontisto](https://www.nuget.org/packages/IconPacks.Avalonia.Fontisto/)
 - [IconPacks.Avalonia.ForkAwesome](https://www.nuget.org/packages/IconPacks.Avalonia.ForkAwesome/)
@@ -134,6 +138,8 @@ Install-Package IconPacks.Avalonia.EvaIcons
 Install-Package IconPacks.Avalonia.FeatherIcons
 Install-Package IconPacks.Avalonia.FileIcons
 Install-Package IconPacks.Avalonia.Fontaudio
+Install-Package IconPacks.Avalonia.FontAwesome5
+Install-Package IconPacks.Avalonia.FontAwesome6
 Install-Package IconPacks.Avalonia.FontAwesome
 Install-Package IconPacks.Avalonia.Fontisto
 Install-Package IconPacks.Avalonia.ForkAwesome

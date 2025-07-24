@@ -22,6 +22,8 @@
         <ProjectReference Include="..\IconPacks.Avalonia.FeatherIcons\IconPacks.Avalonia.FeatherIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.FileIcons\IconPacks.Avalonia.FileIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Fontaudio\IconPacks.Avalonia.Fontaudio.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.FontAwesome5\IconPacks.Avalonia.FontAwesome5.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.FontAwesome6\IconPacks.Avalonia.FontAwesome6.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.FontAwesome\IconPacks.Avalonia.FontAwesome.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Fontisto\IconPacks.Avalonia.Fontisto.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.ForkAwesome\IconPacks.Avalonia.ForkAwesome.csproj" />

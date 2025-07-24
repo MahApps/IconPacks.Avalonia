@@ -11,6 +11,8 @@ using IconPacks.Avalonia.EvaIcons;
 using IconPacks.Avalonia.FeatherIcons;
 using IconPacks.Avalonia.FileIcons;
 using IconPacks.Avalonia.Fontaudio;
+using IconPacks.Avalonia.FontAwesome5;
+using IconPacks.Avalonia.FontAwesome6;
 using IconPacks.Avalonia.FontAwesome;
 using IconPacks.Avalonia.Fontisto;
 using IconPacks.Avalonia.ForkAwesome;
@@ -79,6 +81,12 @@ namespace IconPacks.Avalonia.Converter
                     return data;
                 case PackIconFontaudioKind kind:
                     PackIconDataFactory<PackIconFontaudioKind>.DataIndex.Value?.TryGetValue(kind, out data);
+                    return data;
+                case PackIconFontAwesome5Kind kind:
+                    PackIconDataFactory<PackIconFontAwesome5Kind>.DataIndex.Value?.TryGetValue(kind, out data);
+                    return data;
+                case PackIconFontAwesome6Kind kind:
+                    PackIconDataFactory<PackIconFontAwesome6Kind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
                 case PackIconFontAwesomeKind kind:
                     PackIconDataFactory<PackIconFontAwesomeKind>.DataIndex.Value?.TryGetValue(kind, out data);

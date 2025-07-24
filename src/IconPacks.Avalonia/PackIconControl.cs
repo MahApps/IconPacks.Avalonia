@@ -12,6 +12,8 @@ using IconPacks.Avalonia.EvaIcons;
 using IconPacks.Avalonia.FeatherIcons;
 using IconPacks.Avalonia.FileIcons;
 using IconPacks.Avalonia.Fontaudio;
+using IconPacks.Avalonia.FontAwesome5;
+using IconPacks.Avalonia.FontAwesome6;
 using IconPacks.Avalonia.FontAwesome;
 using IconPacks.Avalonia.Fontisto;
 using IconPacks.Avalonia.ForkAwesome;
@@ -118,6 +120,14 @@ namespace IconPacks.Avalonia
 
                 case PackIconFontaudioKind:
                     UpdateIconPseudoClasses(true, false, true);
+                    break;
+
+                case PackIconFontAwesome5Kind:
+                    UpdateIconPseudoClasses(true, false, false);
+                    break;
+
+                case PackIconFontAwesome6Kind:
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconFontAwesomeKind:

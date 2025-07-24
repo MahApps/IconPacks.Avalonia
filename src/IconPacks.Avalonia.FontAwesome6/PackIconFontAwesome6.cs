@@ -3,27 +3,27 @@ using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
-namespace IconPacks.Avalonia.FontAwesome
+namespace IconPacks.Avalonia.FontAwesome6
 {
     /// <summary>
     /// All icons sourced from Font Awesome Free <see><cref>https://fontawesome.com/</cref></see> - License <see><cref>https://fontawesome.com/license/free</cref></see>
     /// GitHub <see><cref>https://fontawesome.com/</cref></see>
     /// </summary>
-    [MetaData("Font Awesome Free v7", "https://fontawesome.com/", "https://fontawesome.com/license/free")]
-    public class PackIconFontAwesome : PackIconControlBase
+    [MetaData("Font Awesome Free v6", "https://fontawesome.com/", "https://fontawesome.com/license/free")]
+    public class PackIconFontAwesome6 : PackIconControlBase
     {
-        public PackIconFontAwesome()
+        public PackIconFontAwesome6()
         {
             UpdateIconPseudoClasses(true, false, false);
         }
 
-        public static readonly StyledProperty<PackIconFontAwesomeKind> KindProperty
-            = AvaloniaProperty.Register<PackIconFontAwesome, PackIconFontAwesomeKind>(nameof(Kind));
+        public static readonly StyledProperty<PackIconFontAwesome6Kind> KindProperty
+            = AvaloniaProperty.Register<PackIconFontAwesome6, PackIconFontAwesome6Kind>(nameof(Kind));
 
         /// <summary>
         /// Gets or sets the icon to display.
         /// </summary>
-        public PackIconFontAwesomeKind Kind
+        public PackIconFontAwesome6Kind Kind
         {
             get { return GetValue(KindProperty); }
             set { SetValue(KindProperty, value); }
@@ -51,7 +51,7 @@ namespace IconPacks.Avalonia.FontAwesome
             if (Kind != default)
             {
                 string data = null;
-                PackIconDataFactory<PackIconFontAwesomeKind>.DataIndex.Value?.TryGetValue(Kind, out data);
+                PackIconDataFactory<PackIconFontAwesome6Kind>.DataIndex.Value?.TryGetValue(Kind, out data);
                 this.Data = data != null ? StreamGeometry.Parse(data) : null;
             }
             else

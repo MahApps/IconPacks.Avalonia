@@ -14,6 +14,8 @@ using IconPacks.Avalonia.EvaIcons;
 using IconPacks.Avalonia.FeatherIcons;
 using IconPacks.Avalonia.FileIcons;
 using IconPacks.Avalonia.Fontaudio;
+using IconPacks.Avalonia.FontAwesome5;
+using IconPacks.Avalonia.FontAwesome6;
 using IconPacks.Avalonia.FontAwesome;
 using IconPacks.Avalonia.Fontisto;
 using IconPacks.Avalonia.ForkAwesome;
@@ -70,6 +72,8 @@ namespace IconPacks.Avalonia
             Parallel.ForEach(PackIconDataFactory<PackIconFeatherIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconFileIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconFontaudioKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
+            Parallel.ForEach(PackIconDataFactory<PackIconFontAwesome5Kind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
+            Parallel.ForEach(PackIconDataFactory<PackIconFontAwesome6Kind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconFontAwesomeKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconFontistoKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconForkAwesomeKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
