@@ -4,7 +4,7 @@
                     x:ClassModifier="internal">
 
     <Design.PreviewWith>
-        <iconPacks:PackIconUnicons Kind="_0PlusLine" />
+        <iconPacks:PackIconUnicons Kind="_0Plus" />
     </Design.PreviewWith>
 
     <ControlTheme x:Key="{x:Type iconPacks:PackIconUnicons}"
