@@ -19,6 +19,8 @@
     <StyleInclude Source="avares://IconPacks.Avalonia.FeatherIcons/FeatherIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.FileIcons/FileIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Fontaudio/Fontaudio.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.FontAwesome5/FontAwesome5.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.FontAwesome6/FontAwesome6.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.FontAwesome/FontAwesome.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Fontisto/Fontisto.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.ForkAwesome/ForkAwesome.axaml" />

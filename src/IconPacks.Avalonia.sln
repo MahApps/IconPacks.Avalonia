@@ -41,6 +41,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.Fontaudi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.FontAwesome", "IconPacks.Avalonia.FontAwesome\IconPacks.Avalonia.FontAwesome.csproj", "{2487935C-25AF-4F72-801B-0B300180319B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.FontAwesome5", "IconPacks.Avalonia.FontAwesome5\IconPacks.Avalonia.FontAwesome5.csproj", "{D18964C9-5B83-4AA9-BED2-DDEB544AA835}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.FontAwesome6", "IconPacks.Avalonia.FontAwesome6\IconPacks.Avalonia.FontAwesome6.csproj", "{1136B3AF-C58C-4D81-9E23-28784875CD96}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.Fontisto", "IconPacks.Avalonia.Fontisto\IconPacks.Avalonia.Fontisto.csproj", "{2BEF6653-0720-46DD-982B-21A8F2CDD1F3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.ForkAwesome", "IconPacks.Avalonia.ForkAwesome\IconPacks.Avalonia.ForkAwesome.csproj", "{9562CB1B-323D-4726-B4E0-1BFF7E00DA71}"
@@ -261,6 +265,14 @@ Global
 		{6B4FDF42-736E-E9AE-4EDD-BF4C1306E3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4FDF42-736E-E9AE-4EDD-BF4C1306E3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B4FDF42-736E-E9AE-4EDD-BF4C1306E3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18964C9-5B83-4AA9-BED2-DDEB544AA835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18964C9-5B83-4AA9-BED2-DDEB544AA835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18964C9-5B83-4AA9-BED2-DDEB544AA835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18964C9-5B83-4AA9-BED2-DDEB544AA835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1136B3AF-C58C-4D81-9E23-28784875CD96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1136B3AF-C58C-4D81-9E23-28784875CD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1136B3AF-C58C-4D81-9E23-28784875CD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1136B3AF-C58C-4D81-9E23-28784875CD96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

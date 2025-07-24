@@ -12,6 +12,8 @@ using IconPacks.Avalonia.EvaIcons;
 using IconPacks.Avalonia.FeatherIcons;
 using IconPacks.Avalonia.FileIcons;
 using IconPacks.Avalonia.Fontaudio;
+using IconPacks.Avalonia.FontAwesome5;
+using IconPacks.Avalonia.FontAwesome6;
 using IconPacks.Avalonia.FontAwesome;
 using IconPacks.Avalonia.Fontisto;
 using IconPacks.Avalonia.ForkAwesome;
@@ -70,6 +72,8 @@ namespace IconPacks.Avalonia
                 PackIconFeatherIconsKind kind => this.GetPackIcon<PackIconFeatherIcons, PackIconFeatherIconsKind>(kind),
                 PackIconFileIconsKind kind => this.GetPackIcon<PackIconFileIcons, PackIconFileIconsKind>(kind),
                 PackIconFontaudioKind kind => this.GetPackIcon<PackIconFontaudio, PackIconFontaudioKind>(kind),
+                PackIconFontAwesome5Kind kind => this.GetPackIcon<PackIconFontAwesome5, PackIconFontAwesome5Kind>(kind),
+                PackIconFontAwesome6Kind kind => this.GetPackIcon<PackIconFontAwesome6, PackIconFontAwesome6Kind>(kind),
                 PackIconFontAwesomeKind kind => this.GetPackIcon<PackIconFontAwesome, PackIconFontAwesomeKind>(kind),
                 PackIconFontistoKind kind => this.GetPackIcon<PackIconFontisto, PackIconFontistoKind>(kind),
                 PackIconForkAwesomeKind kind => this.GetPackIcon<PackIconForkAwesome, PackIconForkAwesomeKind>(kind),
