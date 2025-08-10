@@ -20,6 +20,7 @@ using IconPacks.Avalonia.ForkAwesome;
 using IconPacks.Avalonia.GameIcons;
 using IconPacks.Avalonia.Ionicons;
 using IconPacks.Avalonia.JamIcons;
+using IconPacks.Avalonia.KeyruneIcons;
 using IconPacks.Avalonia.Lucide;
 using IconPacks.Avalonia.Material;
 using IconPacks.Avalonia.MaterialLight;
@@ -122,6 +123,9 @@ namespace IconPacks.Avalonia
                     return data;
                 case PackIconJamIconsKind kind:
                     PackIconDataFactory<PackIconJamIconsKind>.DataIndex.Value?.TryGetValue(kind, out data);
+                    return data;
+                case PackIconKeyruneIconsKind kind:
+                    PackIconDataFactory<PackIconKeyruneIconsKind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
                 case PackIconLucideKind kind:
                     PackIconDataFactory<PackIconLucideKind>.DataIndex.Value?.TryGetValue(kind, out data);

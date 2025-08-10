@@ -27,6 +27,7 @@
     <StyleInclude Source="avares://IconPacks.Avalonia.GameIcons/GameIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Ionicons/Ionicons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.JamIcons/JamIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.KeyruneIcons/KeyruneIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Lucide/Lucide.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Material/Material.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.MaterialLight/MaterialLight.axaml" />
