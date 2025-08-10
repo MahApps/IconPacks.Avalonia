@@ -22,6 +22,7 @@ using IconPacks.Avalonia.ForkAwesome;
 using IconPacks.Avalonia.GameIcons;
 using IconPacks.Avalonia.Ionicons;
 using IconPacks.Avalonia.JamIcons;
+using IconPacks.Avalonia.KeyruneIcons;
 using IconPacks.Avalonia.Lucide;
 using IconPacks.Avalonia.Material;
 using IconPacks.Avalonia.MaterialLight;
@@ -80,6 +81,7 @@ namespace IconPacks.Avalonia
             Parallel.ForEach(PackIconDataFactory<PackIconGameIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconIoniconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconJamIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
+            Parallel.ForEach(PackIconDataFactory<PackIconKeyruneIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconLucideKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconMaterialKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconMaterialLightKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });

@@ -31,7 +31,7 @@ The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.Ic
 
 | Icon collection | Version | &#8721; | NuGet |
 |---|--:|--:|:--|
-| Complete IconPacks collection with all Icons in one package | | 65208 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
+| Complete IconPacks collection with all Icons in one package | | 65612 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
 | [Bootstrap Icons](https://icons.getbootstrap.com/) | 1.13.1 | 2078 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BootstrapIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BootstrapIcons.svg?style=flat-square&&label=BootstrapIcons"></a> |
 | [Boxicons](https://boxicons.com/) | 2.1.4 | 1634 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BoxIcons.svg?style=flat-square&&label=BoxIcons"></a> |
 | [Circum Icons Free](https://github.com/Klarr-Agency/Circum-Icons) | 2.0.2 | 288 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.CircumIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.CircumIcons.svg?style=flat-square&&label=CircumIcons"></a> |
@@ -50,6 +50,7 @@ The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.Ic
 | [Game Icons](https://github.com/game-icons/icons) | May 4, 2025 | 4170 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.GameIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.GameIcons.svg?style=flat-square&&label=GameIcons"></a> |
 | [Ionicons](https://ionicons.com/) | 4.6.4.1 | 696 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Ionicons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Ionicons.svg?style=flat-square&&label=Ionicons"></a> |
 | [Jam Icons](https://jam-icons.com/) | 3.1.0 | 940 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.JamIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.JamIcons.svg?style=flat-square&&label=JamIcons"></a> |
+| [Keyrune Icons](https://github.com/andrewgioia/keyrune) | 3.17.1 | 404 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.KeyruneIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.KeyruneIcons.svg?style=flat-square&&label=KeyruneIcons"></a> |
 | [Lucide Icons](https://github.com/lucide-icons/lucide) | 0.539.0 | 1630 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Lucide/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Lucide.svg?style=flat-square&&label=Lucide"></a> |
 | [Material Design Icons](https://pictogrammers.com/library/mdi/) | 7.4.47 | 7447 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Material/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Material.svg?style=flat-square&&label=Material"></a> |
 | [Material Design Icons Light](https://github.com/Templarian/MaterialDesignLight) | 0.2.63 | 257 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.MaterialLight/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.MaterialLight.svg?style=flat-square&&label=MaterialLight"></a> |
@@ -99,6 +100,7 @@ IconPacks.Avalonia is delivered via NuGet package manager. You can find the pack
 - [IconPacks.Avalonia.GameIcons](https://www.nuget.org/packages/IconPacks.Avalonia.GameIcons/)
 - [IconPacks.Avalonia.Ionicons](https://www.nuget.org/packages/IconPacks.Avalonia.Ionicons/)
 - [IconPacks.Avalonia.JamIcons](https://www.nuget.org/packages/IconPacks.Avalonia.JamIcons/)
+- [IconPacks.Avalonia.KeyruneIcons](https://www.nuget.org/packages/IconPacks.Avalonia.KeyruneIcons/)
 - [IconPacks.Avalonia.Lucide](https://www.nuget.org/packages/IconPacks.Avalonia.Lucide/)
 - [IconPacks.Avalonia.Material](https://www.nuget.org/packages/IconPacks.Avalonia.Material/)
 - [IconPacks.Avalonia.MaterialLight](https://www.nuget.org/packages/IconPacks.Avalonia.MaterialLight/)
@@ -146,6 +148,7 @@ Install-Package IconPacks.Avalonia.ForkAwesome
 Install-Package IconPacks.Avalonia.GameIcons
 Install-Package IconPacks.Avalonia.Ionicons
 Install-Package IconPacks.Avalonia.JamIcons
+Install-Package IconPacks.Avalonia.KeyruneIcons
 Install-Package IconPacks.Avalonia.Lucide
 Install-Package IconPacks.Avalonia.Material
 Install-Package IconPacks.Avalonia.MaterialLight

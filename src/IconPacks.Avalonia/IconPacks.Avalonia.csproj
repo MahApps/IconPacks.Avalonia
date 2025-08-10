@@ -30,6 +30,7 @@
         <ProjectReference Include="..\IconPacks.Avalonia.GameIcons\IconPacks.Avalonia.GameIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Ionicons\IconPacks.Avalonia.Ionicons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.JamIcons\IconPacks.Avalonia.JamIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.KeyruneIcons\IconPacks.Avalonia.KeyruneIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Lucide\IconPacks.Avalonia.Lucide.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Material\IconPacks.Avalonia.Material.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.MaterialLight\IconPacks.Avalonia.MaterialLight.csproj" />

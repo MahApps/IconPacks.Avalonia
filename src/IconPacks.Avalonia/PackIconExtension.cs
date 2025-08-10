@@ -20,6 +20,7 @@ using IconPacks.Avalonia.ForkAwesome;
 using IconPacks.Avalonia.GameIcons;
 using IconPacks.Avalonia.Ionicons;
 using IconPacks.Avalonia.JamIcons;
+using IconPacks.Avalonia.KeyruneIcons;
 using IconPacks.Avalonia.Lucide;
 using IconPacks.Avalonia.Material;
 using IconPacks.Avalonia.MaterialLight;
@@ -80,6 +81,7 @@ namespace IconPacks.Avalonia
                 PackIconGameIconsKind kind => this.GetPackIcon<PackIconGameIcons, PackIconGameIconsKind>(kind),
                 PackIconIoniconsKind kind => this.GetPackIcon<PackIconIonicons, PackIconIoniconsKind>(kind),
                 PackIconJamIconsKind kind => this.GetPackIcon<PackIconJamIcons, PackIconJamIconsKind>(kind),
+                PackIconKeyruneIconsKind kind => this.GetPackIcon<PackIconKeyruneIcons, PackIconKeyruneIconsKind>(kind),
                 PackIconLucideKind kind => this.GetPackIcon<PackIconLucide, PackIconLucideKind>(kind),
                 PackIconMaterialKind kind => this.GetPackIcon<PackIconMaterial, PackIconMaterialKind>(kind),
                 PackIconMaterialLightKind kind => this.GetPackIcon<PackIconMaterialLight, PackIconMaterialLightKind>(kind),
