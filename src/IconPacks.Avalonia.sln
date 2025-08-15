@@ -101,6 +101,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.Zondicon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.KeyruneIcons", "IconPacks.Avalonia.KeyruneIcons\IconPacks.Avalonia.KeyruneIcons.csproj", "{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{54CC791D-8AC9-49F9-9B96-92512AF0935E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "samples\SampleApp\SampleApp.csproj", "{A271916F-B5BA-4C2C-BE2F-D144FA32A395}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -279,11 +283,18 @@ Global
 		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A271916F-B5BA-4C2C-BE2F-D144FA32A395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A271916F-B5BA-4C2C-BE2F-D144FA32A395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A271916F-B5BA-4C2C-BE2F-D144FA32A395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A271916F-B5BA-4C2C-BE2F-D144FA32A395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {070F04CA-A678-42FC-B584-DD8738FA157D}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A271916F-B5BA-4C2C-BE2F-D144FA32A395} = {54CC791D-8AC9-49F9-9B96-92512AF0935E}
 	EndGlobalSection
 EndGlobal
