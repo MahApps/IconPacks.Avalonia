@@ -1,0 +1,16 @@
+<Project>
+    <!--
+      This enabled central package management. 
+      This allows for controling all NuGet packages within the Directory.Packages.props file
+      See https://learn.microsoft.com/nuget/consume-packages/Central-Package-Management?WT.mc_id=DT-MVP-5003472
+      -->
+
+    <PropertyGroup>
+        <!-- This property enables the Central Package Management feature -->
+        <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+        <!-- https://learn.microsoft.com/nuget/consume-packages/Central-Package-Management?WT.mc_id=DT-MVP-5003472#transitive-pinning -->
+        <AvaloniaVersion>11.3.3</AvaloniaVersion>
+    </PropertyGroup>
+
+
+</Project>

@@ -2,6 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:iconPacks="https://github.com/MahApps/IconPacks.Avalonia"
                     x:ClassModifier="internal">
+    <Design.PreviewWith>
+        <iconPacks:PackIconControl Kind="{x:Static iconPacks:PackIconMaterialKind.AbugidaThai}" />
+    </Design.PreviewWith>
 
     <ControlTemplate x:Key="IconPacks.Avalonia.PackIconControlBase.Template" TargetType="iconPacks:PackIconControlBase">
         <Border CornerRadius="{TemplateBinding CornerRadius}"
@@ -13,7 +16,6 @@
             <Grid x:Name="PART_InnerGrid">
                 <Viewbox x:Name="PART_ViewBox">
                     <Path x:Name="PART_IconPath"
-                          Fill="{TemplateBinding Foreground}"
                           Data="{TemplateBinding Data}"
                           Stretch="Uniform"
                           UseLayoutRounding="False" />
