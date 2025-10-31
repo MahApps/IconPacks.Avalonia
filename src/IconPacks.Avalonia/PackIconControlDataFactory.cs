@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.BootstrapIcons;
+using IconPacks.Avalonia.BoxIcons2;
 using IconPacks.Avalonia.BoxIcons;
 using IconPacks.Avalonia.CircumIcons;
 using IconPacks.Avalonia.Codicons;
@@ -64,6 +65,7 @@ namespace IconPacks.Avalonia
         {
             var allIcons = new ConcurrentDictionary<Enum, string>();
             Parallel.ForEach(PackIconDataFactory<PackIconBootstrapIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
+            Parallel.ForEach(PackIconDataFactory<PackIconBoxIcons2Kind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconBoxIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconCircumIconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });
             Parallel.ForEach(PackIconDataFactory<PackIconCodiconsKind>.Create(), icon => { allIcons.TryAdd(icon.Key, icon.Value); });

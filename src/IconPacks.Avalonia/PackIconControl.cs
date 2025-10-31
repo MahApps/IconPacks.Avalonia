@@ -3,6 +3,7 @@ using Avalonia;
 using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.BootstrapIcons;
+using IconPacks.Avalonia.BoxIcons2;
 using IconPacks.Avalonia.BoxIcons;
 using IconPacks.Avalonia.CircumIcons;
 using IconPacks.Avalonia.Codicons;
@@ -84,6 +85,10 @@ namespace IconPacks.Avalonia
             switch (Kind)
             {
                 case PackIconBootstrapIconsKind:
+                    UpdateIconPseudoClasses(true, false, true);
+                    break;
+
+                case PackIconBoxIcons2Kind:
                     UpdateIconPseudoClasses(true, false, true);
                     break;
 

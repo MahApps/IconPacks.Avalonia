@@ -3,6 +3,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.BootstrapIcons;
+using IconPacks.Avalonia.BoxIcons2;
 using IconPacks.Avalonia.BoxIcons;
 using IconPacks.Avalonia.CircumIcons;
 using IconPacks.Avalonia.Codicons;
@@ -72,6 +73,9 @@ namespace IconPacks.Avalonia
             {
                 case PackIconBootstrapIconsKind kind:
                     PackIconDataFactory<PackIconBootstrapIconsKind>.DataIndex.Value?.TryGetValue(kind, out data);
+                    return data;
+                case PackIconBoxIcons2Kind kind:
+                    PackIconDataFactory<PackIconBoxIcons2Kind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
                 case PackIconBoxIconsKind kind:
                     PackIconDataFactory<PackIconBoxIconsKind>.DataIndex.Value?.TryGetValue(kind, out data);
@@ -204,6 +208,7 @@ namespace IconPacks.Avalonia
             switch (iconKind)
             {
                 case PackIconBootstrapIconsKind:
+                case PackIconBoxIcons2Kind:
                 case PackIconBoxIconsKind:
                 case PackIconCodiconsKind:
                 case PackIconCooliconsKind:
