@@ -3,27 +3,27 @@ using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
-namespace IconPacks.Avalonia.BoxIcons
+namespace IconPacks.Avalonia.BoxIcons2
 {
     /// <summary>
-    /// BoxIcons v3 licensed under [CC 4.0 License](<see><cref>https://docs.boxicons.com/license/free</cref></see>)
-    /// Project web site <see><cref>https://boxicons.com/</cref></see>.
+    /// BoxIcons licensed under [MIT](<see><cref>https://v2.boxicons.com/usage#license</cref></see>)
+    /// Contributions, corrections and requests can be made on GitHub <see><cref>https://github.com/atisawd/boxicons</cref></see>.
     /// </summary>
-    [MetaData("Boxicons v3", "https://boxicons.com/", "https://docs.boxicons.com/license/free")]
-    public class PackIconBoxIcons : PackIconControlBase
+    [MetaData("Boxicons v2", "https://v2.boxicons.com/", "https://v2.boxicons.com/usage#license")]
+    public class PackIconBoxIcons2 : PackIconControlBase
     {
-        public PackIconBoxIcons()
+        public PackIconBoxIcons2()
         {
             UpdateIconPseudoClasses(true, false, true);
         }
 
-        public static readonly StyledProperty<PackIconBoxIconsKind> KindProperty
-            = AvaloniaProperty.Register<PackIconBoxIcons, PackIconBoxIconsKind>(nameof(Kind));
+        public static readonly StyledProperty<PackIconBoxIcons2Kind> KindProperty
+            = AvaloniaProperty.Register<PackIconBoxIcons2, PackIconBoxIcons2Kind>(nameof(Kind));
 
         /// <summary>
         /// Gets or sets the icon to display.
         /// </summary>
-        public PackIconBoxIconsKind Kind
+        public PackIconBoxIcons2Kind Kind
         {
             get { return GetValue(KindProperty); }
             set { SetValue(KindProperty, value); }
@@ -51,7 +51,7 @@ namespace IconPacks.Avalonia.BoxIcons
             if (Kind != default)
             {
                 string data = null;
-                PackIconDataFactory<PackIconBoxIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
+                PackIconDataFactory<PackIconBoxIcons2Kind>.DataIndex.Value?.TryGetValue(Kind, out data);
                 this.Data = data != null ? StreamGeometry.Parse(data) : null;
             }
             else

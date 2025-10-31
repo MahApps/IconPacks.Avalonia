@@ -31,9 +31,10 @@ The same icons are also available for `WPF` and `UWP` with the [MahApps.Metro.Ic
 
 | Icon collection | Version | &#8721; | NuGet |
 |---|--:|--:|:--|
-| Complete IconPacks collection with all Icons in one package | | 65612 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
+| Complete IconPacks collection with all Icons in one package | | 69196 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.svg?style=flat-square&&label=IconPacks"></a> |
 | [Bootstrap Icons](https://icons.getbootstrap.com/) | 1.13.1 | 2078 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BootstrapIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BootstrapIcons.svg?style=flat-square&&label=BootstrapIcons"></a> |
-| [Boxicons](https://boxicons.com/) | 2.1.4 | 1634 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BoxIcons.svg?style=flat-square&&label=BoxIcons"></a> |
+| [Boxicons v2](https://v2.boxicons.com/) | 2.1.4 | 1634 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons2/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BoxIcons2.svg?style=flat-square&&label=BoxIcons2"></a> |
+| [Boxicons v3](https://boxicons.com/) | 3.0.0 | 3584 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.BoxIcons.svg?style=flat-square&&label=BoxIcons"></a> |
 | [Circum Icons Free](https://github.com/Klarr-Agency/Circum-Icons) | 2.0.2 | 288 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.CircumIcons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.CircumIcons.svg?style=flat-square&&label=CircumIcons"></a> |
 | [Codicons](https://github.com/microsoft/vscode-codicons) | 0.0.39 | 493 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Codicons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Codicons.svg?style=flat-square&&label=Codicons"></a> |
 | [Coolicons](https://github.com/krystonschwarze/coolicons) | 4.1 | 442 | <a href="https://www.nuget.org/packages/IconPacks.Avalonia.Coolicons/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/nuget/dt/IconPacks.Avalonia.Coolicons.svg?style=flat-square&&label=Coolicons"></a> |
@@ -83,6 +84,7 @@ IconPacks.Avalonia is delivered via NuGet package manager. You can find the pack
 - [IconPacks.Avalonia](https://www.nuget.org/packages/IconPacks.Avalonia/)
 #### Separate Icon packages
 - [IconPacks.Avalonia.BootstrapIcons](https://www.nuget.org/packages/IconPacks.Avalonia.BootstrapIcons/)
+- [IconPacks.Avalonia.BoxIcons2](https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons2/)
 - [IconPacks.Avalonia.BoxIcons](https://www.nuget.org/packages/IconPacks.Avalonia.BoxIcons/)
 - [IconPacks.Avalonia.CircumIcons](https://www.nuget.org/packages/IconPacks.Avalonia.CircumIcons/)
 - [IconPacks.Avalonia.Codicons](https://www.nuget.org/packages/IconPacks.Avalonia.Codicons/)
@@ -131,6 +133,7 @@ Install-Package IconPacks.Avalonia
 or one of these
 
 Install-Package IconPacks.Avalonia.BootstrapIcons
+Install-Package IconPacks.Avalonia.BoxIcons2
 Install-Package IconPacks.Avalonia.BoxIcons
 Install-Package IconPacks.Avalonia.CircumIcons
 Install-Package IconPacks.Avalonia.Codicons

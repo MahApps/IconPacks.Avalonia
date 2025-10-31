@@ -4,11 +4,11 @@
                     x:ClassModifier="internal">
 
     <Design.PreviewWith>
-        <iconPacks:PackIconBoxIcons Kind="Brands_500px" />
+        <iconPacks:PackIconBoxIcons2 Kind="Logos_500px" />
     </Design.PreviewWith>
 
-    <ControlTheme x:Key="{x:Type iconPacks:PackIconBoxIcons}"
+    <ControlTheme x:Key="{x:Type iconPacks:PackIconBoxIcons2}"
                   BasedOn="{StaticResource IconPacks.Avalonia.PackIconControlBase.Theme}"
-                  TargetType="iconPacks:PackIconBoxIcons" />
+                  TargetType="iconPacks:PackIconBoxIcons2" />
 
 </ResourceDictionary>

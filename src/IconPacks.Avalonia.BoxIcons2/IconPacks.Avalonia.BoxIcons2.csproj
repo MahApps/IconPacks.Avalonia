@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);BOXICONS2</DefineConstants>
+        <IconsName>BoxIcons2</IconsName>
+        <AssemblyName>IconPacks.Avalonia.BoxIcons2</AssemblyName>
+        <Title>IconPacks.Avalonia.BoxIcons2</Title>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\IconPacks.Avalonia.Core\IconPacks.Avalonia.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Resources/**" />
+    </ItemGroup>
+
+</Project>

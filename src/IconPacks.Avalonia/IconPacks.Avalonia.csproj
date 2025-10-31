@@ -13,6 +13,7 @@
     <ItemGroup>
         <ProjectReference Include="..\IconPacks.Avalonia.Core\IconPacks.Avalonia.Core.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.BootstrapIcons\IconPacks.Avalonia.BootstrapIcons.csproj" />
+        <ProjectReference Include="..\IconPacks.Avalonia.BoxIcons2\IconPacks.Avalonia.BoxIcons2.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.BoxIcons\IconPacks.Avalonia.BoxIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.CircumIcons\IconPacks.Avalonia.CircumIcons.csproj" />
         <ProjectReference Include="..\IconPacks.Avalonia.Codicons\IconPacks.Avalonia.Codicons.csproj" />

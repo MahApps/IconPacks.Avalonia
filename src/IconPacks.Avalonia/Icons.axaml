@@ -10,6 +10,7 @@
 
     <StyleInclude Source="avares://IconPacks.Avalonia.Core/PackIcon.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.BootstrapIcons/BootstrapIcons.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.BoxIcons2/BoxIcons2.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.BoxIcons/BoxIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.CircumIcons/CircumIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Codicons/Codicons.axaml" />

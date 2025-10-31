@@ -3,6 +3,7 @@ using Avalonia.Data;
 using Avalonia.Markup.Xaml;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.BootstrapIcons;
+using IconPacks.Avalonia.BoxIcons2;
 using IconPacks.Avalonia.BoxIcons;
 using IconPacks.Avalonia.CircumIcons;
 using IconPacks.Avalonia.Codicons;
@@ -64,6 +65,7 @@ namespace IconPacks.Avalonia
             return this.Kind switch
             {
                 PackIconBootstrapIconsKind kind => this.GetPackIcon<PackIconBootstrapIcons, PackIconBootstrapIconsKind>(kind),
+                PackIconBoxIcons2Kind kind => this.GetPackIcon<PackIconBoxIcons2, PackIconBoxIcons2Kind>(kind),
                 PackIconBoxIconsKind kind => this.GetPackIcon<PackIconBoxIcons, PackIconBoxIconsKind>(kind),
                 PackIconCircumIconsKind kind => this.GetPackIcon<PackIconCircumIcons, PackIconCircumIconsKind>(kind),
                 PackIconCodiconsKind kind => this.GetPackIcon<PackIconCodicons, PackIconCodiconsKind>(kind),
