@@ -4,7 +4,7 @@
                     x:ClassModifier="internal">
 
     <Design.PreviewWith>
-        <iconPacks:PackIconSimpleIcons Kind="_1001tracklists" />
+        <iconPacks:PackIconSimpleIcons Kind="_1001Tracklists" />
     </Design.PreviewWith>
 
     <ControlTheme x:Key="{x:Type iconPacks:PackIconSimpleIcons}"
