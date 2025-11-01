@@ -13,7 +13,6 @@
             <Grid x:Name="PART_InnerGrid">
                 <Viewbox x:Name="PART_ViewBox">
                     <Path x:Name="PART_IconPath"
-                          Fill="{TemplateBinding Foreground}"
                           Data="{TemplateBinding Data}"
                           Stretch="Uniform"
                           UseLayoutRounding="False" />
