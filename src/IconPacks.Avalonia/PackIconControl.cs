@@ -117,7 +117,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconFeatherIconsKind:
-                    UpdateIconPseudoClasses(false, true, false);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconFileIconsKind:

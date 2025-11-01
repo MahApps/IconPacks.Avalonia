@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.FeatherIcons
     {
         public PackIconFeatherIcons()
         {
-            UpdateIconPseudoClasses(false, true, false);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconFeatherIconsKind> KindProperty
