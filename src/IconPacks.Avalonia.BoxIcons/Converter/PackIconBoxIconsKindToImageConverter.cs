@@ -17,11 +17,5 @@ namespace IconPacks.Avalonia.BoxIcons.Converter
 
             return data;
         }
-
-        /// <inheritdoc />
-        protected override ScaleTransform GetScaleTransform(object iconKind)
-        {
-            return new ScaleTransform(1, -1);
-        }
     }
 }

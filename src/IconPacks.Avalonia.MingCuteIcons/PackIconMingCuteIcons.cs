@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.MingCuteIcons
     {
         public PackIconMingCuteIcons()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconMingCuteIconsKind> KindProperty

@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.BootstrapIcons
     {
         public PackIconBootstrapIcons()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconBootstrapIconsKind> KindProperty

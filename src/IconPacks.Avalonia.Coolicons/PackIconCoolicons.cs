@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.Coolicons
     {
         public PackIconCoolicons()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconCooliconsKind> KindProperty

@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.Fontisto
     {
         public PackIconFontisto()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconFontistoKind> KindProperty

@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.ForkAwesome
     {
         public PackIconForkAwesome()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconForkAwesomeKind> KindProperty

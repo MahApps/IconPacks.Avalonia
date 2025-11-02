@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.EvaIcons
     {
         public PackIconEvaIcons()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconEvaIconsKind> KindProperty

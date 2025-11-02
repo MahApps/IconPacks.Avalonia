@@ -85,15 +85,15 @@ namespace IconPacks.Avalonia
             switch (Kind)
             {
                 case PackIconBootstrapIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconBoxIcons2Kind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconBoxIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconCircumIconsKind:
@@ -101,11 +101,11 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconCodiconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconCooliconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconEntypoKind:
@@ -113,7 +113,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconEvaIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconFeatherIconsKind:
@@ -121,11 +121,11 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconFileIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconFontaudioKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconFontAwesome5Kind:
@@ -141,11 +141,11 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconFontistoKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconForkAwesomeKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconGameIconsKind:
@@ -157,7 +157,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconJamIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconKeyruneIconsKind:
@@ -165,7 +165,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconLucideKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconMaterialKind:
@@ -189,7 +189,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconMingCuteIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconModernKind:
@@ -197,7 +197,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconMynaUIIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconOcticonsKind:
@@ -225,7 +225,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconRPGAwesomeKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconSimpleIconsKind:
@@ -233,7 +233,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconTypiconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconUniconsKind:
@@ -241,7 +241,7 @@ namespace IconPacks.Avalonia
                     break;
 
                 case PackIconVaadinIconsKind:
-                    UpdateIconPseudoClasses(true, false, true);
+                    UpdateIconPseudoClasses(true, false, false);
                     break;
 
                 case PackIconWeatherIconsKind:
