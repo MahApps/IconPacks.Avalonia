@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 using IconPacks.Avalonia.Core;
@@ -199,34 +199,6 @@ namespace IconPacks.Avalonia
                     return data;
                 default:
                     return null;
-            }
-        }
-
-        /// <inheritdoc />
-        protected override ScaleTransform GetScaleTransform(object iconKind)
-        {
-            switch (iconKind)
-            {
-                case PackIconBootstrapIconsKind:
-                case PackIconBoxIcons2Kind:
-                case PackIconBoxIconsKind:
-                case PackIconCodiconsKind:
-                case PackIconCooliconsKind:
-                case PackIconEvaIconsKind:
-                case PackIconFileIconsKind:
-                case PackIconFontaudioKind:
-                case PackIconFontistoKind:
-                case PackIconForkAwesomeKind:
-                case PackIconJamIconsKind:
-                case PackIconLucideKind:
-                case PackIconMingCuteIconsKind:
-                case PackIconMynaUIIconsKind:
-                case PackIconRPGAwesomeKind:
-                case PackIconTypiconsKind:
-                case PackIconVaadinIconsKind:
-                    return new ScaleTransform(1, -1);
-                default:
-                    return new ScaleTransform(1, 1);
             }
         }
     }
