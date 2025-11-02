@@ -13,7 +13,6 @@
             <Grid x:Name="PART_InnerGrid">
                 <Viewbox x:Name="PART_ViewBox">
                     <Path x:Name="PART_IconPath"
-                          Fill="{TemplateBinding Foreground}"
                           Data="{TemplateBinding Data}"
                           Stretch="Uniform"
                           UseLayoutRounding="False" />
@@ -46,6 +45,7 @@
             <Setter Property="StrokeJoin" Value="Round" />
             <Setter Property="Width" Value="24" />
             <Setter Property="Height" Value="24" />
+            <Setter Property="Margin" Value="1" />
         </Style>
 
         <!-- flipped icon data -->

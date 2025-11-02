@@ -1,4 +1,4 @@
-﻿using Avalonia.Media;
+using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Converter;
 using IconPacks.Avalonia.BootstrapIcons;
@@ -211,40 +211,6 @@ namespace IconPacks.Avalonia.Converter
                 default:
                     return new ScaleTransform(1, 1);
             }
-        }
-
-        /// <inheritdoc />
-        protected override DrawingGroup GetDrawingGroup(object iconKind, IBrush foregroundBrush, string path)
-        {
-            var geometryDrawing = new GeometryDrawing
-            {
-                Geometry = StreamGeometry.Parse(path)
-            };
-
-            switch (iconKind)
-            {
-                case PackIconFeatherIconsKind:
-                {
-                    var pen = new Pen(foregroundBrush, 2d)
-                    {
-                        LineCap = PenLineCap.Round,
-                        LineJoin = PenLineJoin.Round,
-                    };
-                    geometryDrawing.Pen = pen;
-                    break;
-                }
-                default:
-                    geometryDrawing.Brush = foregroundBrush;
-                    break;
-            }
-
-            var drawingGroup = new DrawingGroup
-            {
-                Children = { geometryDrawing },
-                Transform = this.GetTransformGroup(iconKind)
-            };
-
-            return drawingGroup;
         }
     }
 }
