@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.Fontaudio
     {
         public PackIconFontaudio()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconFontaudioKind> KindProperty

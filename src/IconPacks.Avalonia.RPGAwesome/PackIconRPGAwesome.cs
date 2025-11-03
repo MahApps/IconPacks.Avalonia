@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.RPGAwesome
     {
         public PackIconRPGAwesome()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconRPGAwesomeKind> KindProperty

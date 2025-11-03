@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.VaadinIcons
     {
         public PackIconVaadinIcons()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconVaadinIconsKind> KindProperty

@@ -34,11 +34,5 @@ namespace IconPacks.Avalonia.Fontaudio
 
             return data;
         }
-
-        /// <inheritdoc />
-        protected override ScaleTransform GetScaleTransform(object iconKind)
-        {
-            return new ScaleTransform(1, -1);
-        }
     }
 }

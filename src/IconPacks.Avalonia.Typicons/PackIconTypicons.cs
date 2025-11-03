@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.Typicons
     {
         public PackIconTypicons()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconTypiconsKind> KindProperty

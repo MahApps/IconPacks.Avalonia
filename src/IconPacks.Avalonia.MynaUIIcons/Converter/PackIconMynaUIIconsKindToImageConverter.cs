@@ -17,11 +17,5 @@ namespace IconPacks.Avalonia.MynaUIIcons.Converter
 
             return data;
         }
-
-        /// <inheritdoc />
-        protected override ScaleTransform GetScaleTransform(object iconKind)
-        {
-            return new ScaleTransform(1, -1);
-        }
     }
 }

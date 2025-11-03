@@ -14,7 +14,7 @@ namespace IconPacks.Avalonia.Lucide
     {
         public PackIconLucide()
         {
-            UpdateIconPseudoClasses(true, false, true);
+            UpdateIconPseudoClasses(true, false, false);
         }
 
         public static readonly StyledProperty<PackIconLucideKind> KindProperty
