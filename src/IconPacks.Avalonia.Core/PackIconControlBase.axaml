@@ -34,12 +34,12 @@
 
         <!-- icon is filled -->
         <Style Selector="^:icon-filled /template/ Path#PART_IconPath">
-            <Setter Property="Fill" Value="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+            <Setter Property="Fill" Value="{CompiledBinding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
         </Style>
 
         <!-- icon is outlined -->
         <Style Selector="^:icon-outlined /template/ Path#PART_IconPath">
-            <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+            <Setter Property="Stroke" Value="{CompiledBinding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
             <Setter Property="StrokeThickness" Value="2" />
             <Setter Property="StrokeLineCap" Value="Round" />
             <Setter Property="StrokeJoin" Value="Round" />
