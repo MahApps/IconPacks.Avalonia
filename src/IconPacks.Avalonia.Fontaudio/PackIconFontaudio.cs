@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Fontaudio
     [MetaData("Fontaudio", "https://github.com/fefanto/fontaudio", "https://github.com/fefanto/fontaudio#license")]
     public class PackIconFontaudio : PackIconControlBase
     {
-        public PackIconFontaudio()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFontaudioKind> KindProperty
             = AvaloniaProperty.Register<PackIconFontaudio, PackIconFontaudioKind>(nameof(Kind));
 

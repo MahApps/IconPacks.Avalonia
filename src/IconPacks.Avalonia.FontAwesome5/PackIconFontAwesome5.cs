@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.FontAwesome5
     [MetaData("Font Awesome Free v5", "https://fontawesome.com/", "https://fontawesome.com/license/free")]
     public class PackIconFontAwesome5 : PackIconControlBase
     {
-        public PackIconFontAwesome5()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFontAwesome5Kind> KindProperty
             = AvaloniaProperty.Register<PackIconFontAwesome5, PackIconFontAwesome5Kind>(nameof(Kind));
 

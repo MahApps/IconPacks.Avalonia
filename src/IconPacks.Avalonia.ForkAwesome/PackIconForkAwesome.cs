@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.ForkAwesome
     [MetaData("Fork Awesome", "https://forkaweso.me/", "https://github.com/ForkAwesome/Fork-Awesome/blob/master/LICENSES")]
     public class PackIconForkAwesome : PackIconControlBase
     {
-        public PackIconForkAwesome()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconForkAwesomeKind> KindProperty
             = AvaloniaProperty.Register<PackIconForkAwesome, PackIconForkAwesomeKind>(nameof(Kind));
 

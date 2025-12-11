@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Codicons
     [MetaData("Codicons", "https://github.com/microsoft/vscode-codicons", "https://github.com/microsoft/vscode-codicons/blob/main/LICENSE")]
     public class PackIconCodicons : PackIconControlBase
     {
-        public PackIconCodicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconCodiconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconCodicons, PackIconCodiconsKind>(nameof(Kind));
 

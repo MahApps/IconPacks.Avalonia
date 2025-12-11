@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.BootstrapIcons
     [MetaData("Bootstrap Icons", "https://icons.getbootstrap.com/", "https://github.com/twbs/icons?tab=MIT-1-ov-file#readme")]
     public class PackIconBootstrapIcons : PackIconControlBase
     {
-        public PackIconBootstrapIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconBootstrapIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconBootstrapIcons, PackIconBootstrapIconsKind>(nameof(Kind));
 

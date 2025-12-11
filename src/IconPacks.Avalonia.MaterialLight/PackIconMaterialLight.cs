@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.MaterialLight
     [MetaData("Material Design Icons Light", "https://github.com/Templarian/MaterialDesignLight", "https://github.com/Templarian/MaterialDesignLight/blob/master/LICENSE.md")]
     public class PackIconMaterialLight : PackIconControlBase
     {
-        public PackIconMaterialLight()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMaterialLightKind> KindProperty
             = AvaloniaProperty.Register<PackIconMaterialLight, PackIconMaterialLightKind>(nameof(Kind));
 

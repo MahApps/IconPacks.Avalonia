@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.PhosphorIcons
     [MetaData("Phosphor Icons", "https://phosphoricons.com/", "https://github.com/phosphor-icons/core?tab=MIT-1-ov-file#readme")]
     public class PackIconPhosphorIcons : PackIconControlBase
     {
-        public PackIconPhosphorIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconPhosphorIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconPhosphorIcons, PackIconPhosphorIconsKind>(nameof(Kind));
 

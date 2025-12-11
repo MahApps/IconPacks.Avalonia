@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Entypo
     [MetaData("Entypo+", "http://www.entypo.com/", "https://creativecommons.org/licenses/by-sa/4.0/")]
     public class PackIconEntypo : PackIconControlBase
     {
-        public PackIconEntypo()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconEntypoKind> KindProperty
             = AvaloniaProperty.Register<PackIconEntypo, PackIconEntypoKind>(nameof(Kind));
 

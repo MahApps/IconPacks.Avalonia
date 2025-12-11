@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Coolicons
     [MetaData("Coolicons", "https://github.com/krystonschwarze/coolicons", "https://github.com/krystonschwarze/coolicons/blob/master/README.md#license")]
     public class PackIconCoolicons : PackIconControlBase
     {
-        public PackIconCoolicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconCooliconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconCoolicons, PackIconCooliconsKind>(nameof(Kind));
 

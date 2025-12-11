@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Zondicons
     [MetaData("Zondicons", "https://www.zondicons.com/", "https://creativecommons.org/licenses/by/4.0/")]
     public class PackIconZondicons : PackIconControlBase
     {
-        public PackIconZondicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconZondiconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconZondicons, PackIconZondiconsKind>(nameof(Kind));
 

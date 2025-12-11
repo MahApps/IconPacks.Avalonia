@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.RPGAwesome
     [MetaData("RPG Awesome", "http://nagoshiashumari.github.io/Rpg-Awesome/", "https://github.com/nagoshiashumari/Rpg-Awesome/blob/master/LICENSE.md")]
     public class PackIconRPGAwesome : PackIconControlBase
     {
-        public PackIconRPGAwesome()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconRPGAwesomeKind> KindProperty
             = AvaloniaProperty.Register<PackIconRPGAwesome, PackIconRPGAwesomeKind>(nameof(Kind));
 

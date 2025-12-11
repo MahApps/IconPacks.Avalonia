@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.CircumIcons
     [MetaData("Circum Icons Free", "https://github.com/Klarr-Agency/Circum-Icons", "https://github.com/Klarr-Agency/Circum-Icons?tab=MPL-2.0-1-ov-file")]
     public class PackIconCircumIcons : PackIconControlBase
     {
-        public PackIconCircumIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconCircumIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconCircumIcons, PackIconCircumIconsKind>(nameof(Kind));
 
