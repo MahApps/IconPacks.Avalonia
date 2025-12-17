@@ -51,9 +51,7 @@ namespace IconPacks.Avalonia
 
             var geometry = IconGeometryCache.GetOrAdd(kind, () =>
             {
-                var value = (PackIconControlDataFactory.DataIndex.Value?.TryGetValue(kind, out var data) ?? false) 
-                    ? data : null;
-                return value;
+                return PackIconDataIndex.TryGetPath(kind, out var data) ? data : null;
             });
 
             Data = geometry;

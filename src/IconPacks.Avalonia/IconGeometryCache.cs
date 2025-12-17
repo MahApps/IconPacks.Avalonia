@@ -7,7 +7,17 @@ namespace IconPacks.Avalonia;
 
 internal static class IconGeometryCache
 {
-    private sealed record Entry(Enum Key, StreamGeometry Geometry);
+    private sealed class Entry
+    {
+        public Enum Key { get; }
+        public StreamGeometry Geometry { get; }
+
+        public Entry(Enum key, StreamGeometry geometry)
+        {
+            Key = key;
+            Geometry = geometry;
+        }
+    }
 
     private static readonly object _Gate = new();
     private static readonly Dictionary<Enum, LinkedListNode<Entry>> _Map = new();
