@@ -22,17 +22,5 @@ namespace IconPacks.Avalonia.Fontaudio
         {
             return CreateImageSource(this.Kind, this.Brush ?? Brushes.Black);
         }
-
-        /// <inheritdoc />
-        protected override string GetPathData(object iconKind)
-        {
-            string data = null;
-            if (iconKind is PackIconFontaudioKind kind)
-            {
-                PackIconDataFactory<PackIconFontaudioKind>.DataIndex.Value?.TryGetValue(kind, out data);
-            }
-
-            return data;
-        }
     }
 }

@@ -22,17 +22,5 @@ namespace IconPacks.Avalonia.Codicons
         {
             return CreateImageSource(this.Kind, this.Brush ?? Brushes.Black);
         }
-
-        /// <inheritdoc />
-        protected override string GetPathData(object iconKind)
-        {
-            string data = null;
-            if (iconKind is PackIconCodiconsKind kind)
-            {
-                PackIconDataFactory<PackIconCodiconsKind>.DataIndex.Value?.TryGetValue(kind, out data);
-            }
-
-            return data;
-        }
     }
 }

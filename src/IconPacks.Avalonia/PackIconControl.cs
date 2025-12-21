@@ -8,8 +8,6 @@ namespace IconPacks.Avalonia
     /// </summary>
     public class PackIconControl : PackIconControlBase
     {
-        public static int GeometryCache { get; set; } = 1000;
-
         public static readonly StyledProperty<Enum> KindProperty
             = AvaloniaProperty.Register<PackIconControl, Enum>(nameof(Kind));
 
@@ -49,10 +47,7 @@ namespace IconPacks.Avalonia
                 return;
             }
 
-            var geometry = IconGeometryCache.GetOrAdd(kind, () =>
-            {
-                return PackIconDataIndex.TryGetPath(kind, out var data) ? data : null;
-            });
+            var geometry = PackIconGeometryCache.GetOrAdd(Kind);
 
             Data = geometry;
         }

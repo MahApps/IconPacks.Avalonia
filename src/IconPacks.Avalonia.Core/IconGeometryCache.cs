@@ -3,10 +3,23 @@ using System;
 using System.Collections.Generic;
 using Avalonia.Media;
 
-namespace IconPacks.Avalonia;
+namespace IconPacks.Avalonia.Core;
 
-internal static class IconGeometryCache
+public static class PackIconGeometryCache
 {
+    /// <summary>
+    /// Gets or sets the maximum number of icons to cache.
+    /// </summary>
+    public static int CacheSize
+    {
+        get => field;
+        set
+        {
+            field = value;
+            TrimUnsafe(field);
+        }
+    } = 100;
+    
     private sealed class Entry
     {
         public Enum Key { get; }
@@ -23,12 +36,14 @@ internal static class IconGeometryCache
     private static readonly Dictionary<Enum, LinkedListNode<Entry>> _Map = new();
     private static readonly LinkedList<Entry> _Lru = new();
 
-    public static StreamGeometry? GetOrAdd(Enum kind, Func<string?> getPathData)
+    public static StreamGeometry? GetOrAdd(Enum kind)
     {
-        var capacity = PackIconControl.GeometryCache;
+        var capacity = CacheSize;
+        string? path;
         
         if (capacity <= 0)
-            return CreateGeometry(getPathData);
+            return PackIconDataIndex.TryGetPath(kind, out path) ? 
+                CreateGeometry(path) : null;
 
         // Fast path: try hit
         lock (_Gate)
@@ -42,7 +57,8 @@ internal static class IconGeometryCache
         }
 
         // Parse outside lock (parsing can be expensive)
-        var created = CreateGeometry(getPathData);
+        PackIconDataIndex.TryGetPath(kind, out path);
+        var created = CreateGeometry(path);
         if (created is null)
             return null;
 
@@ -65,22 +81,23 @@ internal static class IconGeometryCache
         }
     }
 
-    private static StreamGeometry? CreateGeometry(Func<string?> getPathData)
+    private static StreamGeometry? CreateGeometry(string? data)
     {
-        var data = getPathData();
-        if (string.IsNullOrWhiteSpace(data))
-            return null;
-
-        return StreamGeometry.Parse(data);
+        return data is null || string.IsNullOrWhiteSpace(data) 
+            ? null 
+            : StreamGeometry.Parse(data);
     }
 
     private static void TrimUnsafe(int capacity)
     {
-        while (_Map.Count > capacity && _Lru.Last is not null)
+        lock (_Gate)
         {
-            var last = _Lru.Last;
-            _Lru.RemoveLast();
-            _Map.Remove(last.Value.Key);
+            while (_Map.Count > capacity && _Lru.Last is not null)
+            {
+                var last = _Lru.Last;
+                _Lru.RemoveLast();
+                _Map.Remove(last.Value.Key);
+            }
         }
     }
 

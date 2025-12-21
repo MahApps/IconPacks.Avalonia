@@ -24,7 +24,12 @@ namespace IconPacks.Avalonia.Core.Converter
         /// <summary>
         /// Gets the path data for the given kind.
         /// </summary>
-        protected abstract string GetPathData(object iconKind);
+        protected string GetPathData(object iconKind)
+        {
+            return PackIconDataIndex.TryGetPath((Enum)iconKind, out string data)
+                ? data
+                : null;
+        }
 
         /// <summary>
         /// Gets the ScaleTransform for the given kind.
@@ -53,7 +58,7 @@ namespace IconPacks.Avalonia.Core.Converter
         }
 
         /// <summary>
-        /// Gets the <see cref="T:System.Windows.Media.DrawingGroup" /> object that will be used for the <see cref="T:System.Windows.Media.DrawingImage" />.
+        /// Gets the <see cref="DrawingGroup" /> object that will be used for the <see cref="DrawingImage" />.
         /// </summary>
         protected virtual DrawingGroup GetDrawingGroup(object iconKind, IBrush foregroundBrush, string path)
         {

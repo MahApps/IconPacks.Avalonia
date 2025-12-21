@@ -1,21 +1,8 @@
-﻿using Avalonia.Media;
-using IconPacks.Avalonia.Core;
-using IconPacks.Avalonia.Core.Converter;
+﻿using IconPacks.Avalonia.Core.Converter;
 
 namespace IconPacks.Avalonia.BoxIcons2.Converter
 {
     public class PackIconBoxIcons2KindToImageConverter : PackIconKindToImageConverterBase
     {
-        /// <inheritdoc />
-        protected override string GetPathData(object iconKind)
-        {
-            string data = null;
-            if (iconKind is PackIconBoxIcons2Kind kind)
-            {
-                PackIconDataFactory<PackIconBoxIcons2Kind>.DataIndex.Value?.TryGetValue(kind, out data);
-            }
-
-            return data;
-        }
     }
 }

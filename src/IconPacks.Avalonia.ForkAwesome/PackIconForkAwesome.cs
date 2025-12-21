@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -45,9 +44,7 @@ namespace IconPacks.Avalonia.ForkAwesome
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconForkAwesomeKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {
