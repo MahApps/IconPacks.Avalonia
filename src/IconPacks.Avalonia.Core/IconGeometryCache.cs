@@ -7,18 +7,20 @@ namespace IconPacks.Avalonia.Core;
 
 public static class PackIconGeometryCache
 {
+    private static int _cacheSize = 100;
+
     /// <summary>
     /// Gets or sets the maximum number of icons to cache.
     /// </summary>
     public static int CacheSize
     {
-        get => field;
+        get => _cacheSize;
         set
         {
-            field = value;
-            TrimUnsafe(field);
+            _cacheSize = value;
+            TrimUnsafe(_cacheSize);
         }
-    } = 100;
+    }
     
     private sealed class Entry
     {
