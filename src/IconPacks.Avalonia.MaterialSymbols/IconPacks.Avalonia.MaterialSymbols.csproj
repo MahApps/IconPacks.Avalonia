@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants);MATERIALSYMBOLS</DefineConstants>
+        <IconsName>MaterialSymbols</IconsName>
+        <AssemblyName>IconPacks.Avalonia.MaterialSymbols</AssemblyName>
+        <Title>IconPacks.Avalonia.MaterialSymbols</Title>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\IconPacks.Avalonia.Core\IconPacks.Avalonia.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Resources/**" />
+    </ItemGroup>
+
+</Project>

@@ -23,9 +23,10 @@ using IconPacks.Avalonia.Ionicons;
 using IconPacks.Avalonia.JamIcons;
 using IconPacks.Avalonia.KeyruneIcons;
 using IconPacks.Avalonia.Lucide;
+using IconPacks.Avalonia.MaterialDesign;
 using IconPacks.Avalonia.Material;
 using IconPacks.Avalonia.MaterialLight;
-using IconPacks.Avalonia.MaterialDesign;
+using IconPacks.Avalonia.MaterialSymbols;
 using IconPacks.Avalonia.MemoryIcons;
 using IconPacks.Avalonia.Microns;
 using IconPacks.Avalonia.MingCuteIcons;
@@ -168,6 +169,10 @@ namespace IconPacks.Avalonia
                     UpdateIconPseudoClasses(true, false, false);
                     break;
 
+                case PackIconMaterialDesignKind:
+                    UpdateIconPseudoClasses(true, false, false);
+                    break;
+
                 case PackIconMaterialKind:
                     UpdateIconPseudoClasses(true, false, false);
                     break;
@@ -176,7 +181,7 @@ namespace IconPacks.Avalonia
                     UpdateIconPseudoClasses(true, false, false);
                     break;
 
-                case PackIconMaterialDesignKind:
+                case PackIconMaterialSymbolsKind:
                     UpdateIconPseudoClasses(true, false, false);
                     break;
 

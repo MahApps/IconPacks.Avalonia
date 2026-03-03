@@ -67,6 +67,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.Material
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.MaterialLight", "IconPacks.Avalonia.MaterialLight\IconPacks.Avalonia.MaterialLight.csproj", "{EB0EA935-B4CE-4799-ADB5-03041D84B1F7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.MaterialSymbols", "IconPacks.Avalonia.MaterialSymbols\IconPacks.Avalonia.MaterialSymbols.csproj", "{FB46170A-5329-CBFE-882F-B74152EA6015}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.MemoryIcons", "IconPacks.Avalonia.MemoryIcons\IconPacks.Avalonia.MemoryIcons.csproj", "{1040D17D-460F-4163-9F6D-D6532D9B31F2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconPacks.Avalonia.Microns", "IconPacks.Avalonia.Microns\IconPacks.Avalonia.Microns.csproj", "{9E6E2D58-AB50-423C-BD72-648C2457C937}"
@@ -117,6 +119,10 @@ Global
 		{81B6D0A7-5E8A-48FB-8886-78B5232AE7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81B6D0A7-5E8A-48FB-8886-78B5232AE7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81B6D0A7-5E8A-48FB-8886-78B5232AE7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176286B9-8AE1-A219-C6CD-E510A708A500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176286B9-8AE1-A219-C6CD-E510A708A500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176286B9-8AE1-A219-C6CD-E510A708A500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176286B9-8AE1-A219-C6CD-E510A708A500}.Release|Any CPU.Build.0 = Release|Any CPU
 		{333DB4EA-C5C2-4E32-9387-7B64D6D1B1B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{333DB4EA-C5C2-4E32-9387-7B64D6D1B1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333DB4EA-C5C2-4E32-9387-7B64D6D1B1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -189,6 +195,10 @@ Global
 		{30506340-AA03-480F-9742-66F8FC625023}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30506340-AA03-480F-9742-66F8FC625023}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30506340-AA03-480F-9742-66F8FC625023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01B53E04-9B8D-456C-A76E-C6637852ABD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{01B53E04-9B8D-456C-A76E-C6637852ABD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01B53E04-9B8D-456C-A76E-C6637852ABD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -277,14 +287,10 @@ Global
 		{17075AF9-8D8C-40C7-99C2-BC9DCA67B5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17075AF9-8D8C-40C7-99C2-BC9DCA67B5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17075AF9-8D8C-40C7-99C2-BC9DCA67B5B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE3ADEC9-7B3C-49B9-D8FF-D504AF916208}.Release|Any CPU.Build.0 = Release|Any CPU
-		{176286B9-8AE1-A219-C6CD-E510A708A500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{176286B9-8AE1-A219-C6CD-E510A708A500}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{176286B9-8AE1-A219-C6CD-E510A708A500}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{176286B9-8AE1-A219-C6CD-E510A708A500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB46170A-5329-CBFE-882F-B74152EA6015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB46170A-5329-CBFE-882F-B74152EA6015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB46170A-5329-CBFE-882F-B74152EA6015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB46170A-5329-CBFE-882F-B74152EA6015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

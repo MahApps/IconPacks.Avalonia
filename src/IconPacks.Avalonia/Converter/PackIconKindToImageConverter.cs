@@ -22,9 +22,10 @@ using IconPacks.Avalonia.Ionicons;
 using IconPacks.Avalonia.JamIcons;
 using IconPacks.Avalonia.KeyruneIcons;
 using IconPacks.Avalonia.Lucide;
+using IconPacks.Avalonia.MaterialDesign;
 using IconPacks.Avalonia.Material;
 using IconPacks.Avalonia.MaterialLight;
-using IconPacks.Avalonia.MaterialDesign;
+using IconPacks.Avalonia.MaterialSymbols;
 using IconPacks.Avalonia.MemoryIcons;
 using IconPacks.Avalonia.Microns;
 using IconPacks.Avalonia.MingCuteIcons;
@@ -117,14 +118,17 @@ namespace IconPacks.Avalonia.Converter
                 case PackIconLucideKind kind:
                     PackIconDataFactory<PackIconLucideKind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
+                case PackIconMaterialDesignKind kind:
+                    PackIconDataFactory<PackIconMaterialDesignKind>.DataIndex.Value?.TryGetValue(kind, out data);
+                    return data;
                 case PackIconMaterialKind kind:
                     PackIconDataFactory<PackIconMaterialKind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
                 case PackIconMaterialLightKind kind:
                     PackIconDataFactory<PackIconMaterialLightKind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
-                case PackIconMaterialDesignKind kind:
-                    PackIconDataFactory<PackIconMaterialDesignKind>.DataIndex.Value?.TryGetValue(kind, out data);
+                case PackIconMaterialSymbolsKind kind:
+                    PackIconDataFactory<PackIconMaterialSymbolsKind>.DataIndex.Value?.TryGetValue(kind, out data);
                     return data;
                 case PackIconMemoryIconsKind kind:
                     PackIconDataFactory<PackIconMemoryIconsKind>.DataIndex.Value?.TryGetValue(kind, out data);

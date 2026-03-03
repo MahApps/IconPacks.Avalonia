@@ -30,9 +30,10 @@
     <StyleInclude Source="avares://IconPacks.Avalonia.JamIcons/JamIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.KeyruneIcons/KeyruneIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Lucide/Lucide.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.MaterialDesign/MaterialDesign.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Material/Material.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.MaterialLight/MaterialLight.axaml" />
-    <StyleInclude Source="avares://IconPacks.Avalonia.MaterialDesign/MaterialDesign.axaml" />
+    <StyleInclude Source="avares://IconPacks.Avalonia.MaterialSymbols/MaterialSymbols.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.MemoryIcons/MemoryIcons.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.Microns/Microns.axaml" />
     <StyleInclude Source="avares://IconPacks.Avalonia.MingCuteIcons/MingCuteIcons.axaml" />

@@ -23,9 +23,10 @@ using IconPacks.Avalonia.Ionicons;
 using IconPacks.Avalonia.JamIcons;
 using IconPacks.Avalonia.KeyruneIcons;
 using IconPacks.Avalonia.Lucide;
+using IconPacks.Avalonia.MaterialDesign;
 using IconPacks.Avalonia.Material;
 using IconPacks.Avalonia.MaterialLight;
-using IconPacks.Avalonia.MaterialDesign;
+using IconPacks.Avalonia.MaterialSymbols;
 using IconPacks.Avalonia.MemoryIcons;
 using IconPacks.Avalonia.Microns;
 using IconPacks.Avalonia.MingCuteIcons;
@@ -85,9 +86,10 @@ namespace IconPacks.Avalonia
                 PackIconJamIconsKind kind => this.GetPackIcon<PackIconJamIcons, PackIconJamIconsKind>(kind),
                 PackIconKeyruneIconsKind kind => this.GetPackIcon<PackIconKeyruneIcons, PackIconKeyruneIconsKind>(kind),
                 PackIconLucideKind kind => this.GetPackIcon<PackIconLucide, PackIconLucideKind>(kind),
+                PackIconMaterialDesignKind kind => this.GetPackIcon<PackIconMaterialDesign, PackIconMaterialDesignKind>(kind),
                 PackIconMaterialKind kind => this.GetPackIcon<PackIconMaterial, PackIconMaterialKind>(kind),
                 PackIconMaterialLightKind kind => this.GetPackIcon<PackIconMaterialLight, PackIconMaterialLightKind>(kind),
-                PackIconMaterialDesignKind kind => this.GetPackIcon<PackIconMaterialDesign, PackIconMaterialDesignKind>(kind),
+                PackIconMaterialSymbolsKind kind => this.GetPackIcon<PackIconMaterialSymbols, PackIconMaterialSymbolsKind>(kind),
                 PackIconMemoryIconsKind kind => this.GetPackIcon<PackIconMemoryIcons, PackIconMemoryIconsKind>(kind),
                 PackIconMicronsKind kind => this.GetPackIcon<PackIconMicrons, PackIconMicronsKind>(kind),
                 PackIconMingCuteIconsKind kind => this.GetPackIcon<PackIconMingCuteIcons, PackIconMingCuteIconsKind>(kind),
