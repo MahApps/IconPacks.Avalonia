@@ -24,7 +24,7 @@ test: false
 
 install:
   - ps: Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -OutFile 'dotnet-install.ps1'
-  - ps: ./dotnet-install.ps1 -Version 8.0.403 -InstallDir "C:\Program Files\dotnet"
+  - ps: ./dotnet-install.ps1 -Channel 10.0 -InstallDir "C:\Program Files\dotnet"
 
 pull_requests:
   do_not_increment_build_number: false
