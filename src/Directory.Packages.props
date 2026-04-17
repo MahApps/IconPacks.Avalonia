@@ -9,12 +9,12 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <!-- https://learn.microsoft.com/nuget/consume-packages/Central-Package-Management?WT.mc_id=DT-MVP-5003472#transitive-pinning -->
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
-    <AvaloniaVersion>12.0.0-rc1</AvaloniaVersion>
+    <AvaloniaVersion>12.0.1</AvaloniaVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Avalonia" Version="$(AvaloniaVersion)" />
-    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.201" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.202" />
     <PackageVersion Include="JetBrains.Annotations" Version="2025.2.4" />
-    <PackageVersion Include="System.Text.Json" Version="10.0.5" />
+    <PackageVersion Include="System.Text.Json" Version="10.0.6" />
   </ItemGroup>
 </Project>
