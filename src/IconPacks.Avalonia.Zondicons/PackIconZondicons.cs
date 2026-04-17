@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Zondicons
     [MetaData("Zondicons", "https://www.zondicons.com/", "https://creativecommons.org/licenses/by/4.0/")]
     public class PackIconZondicons : PackIconControlBase
     {
-        public PackIconZondicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconZondiconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconZondicons, PackIconZondiconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Zondicons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconZondiconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

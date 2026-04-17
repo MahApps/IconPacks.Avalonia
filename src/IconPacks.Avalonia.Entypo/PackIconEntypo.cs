@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Entypo
     [MetaData("Entypo+", "http://www.entypo.com/", "https://creativecommons.org/licenses/by-sa/4.0/")]
     public class PackIconEntypo : PackIconControlBase
     {
-        public PackIconEntypo()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconEntypoKind> KindProperty
             = AvaloniaProperty.Register<PackIconEntypo, PackIconEntypoKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Entypo
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconEntypoKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Lucide
     [MetaData("Lucide Icons", "https://github.com/lucide-icons/lucide", "https://github.com/lucide-icons/lucide?tab=ISC-1-ov-file#readme")]
     public class PackIconLucide : PackIconControlBase
     {
-        public PackIconLucide()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconLucideKind> KindProperty
             = AvaloniaProperty.Register<PackIconLucide, PackIconLucideKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Lucide
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconLucideKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

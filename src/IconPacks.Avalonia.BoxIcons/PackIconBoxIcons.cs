@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.BoxIcons
     [MetaData("Boxicons v3", "https://boxicons.com/", "https://docs.boxicons.com/license/free")]
     public class PackIconBoxIcons : PackIconControlBase
     {
-        public PackIconBoxIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconBoxIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconBoxIcons, PackIconBoxIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.BoxIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconBoxIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

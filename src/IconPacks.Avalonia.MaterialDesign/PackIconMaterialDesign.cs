@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.MaterialDesign
     [MetaData("Material Icons (Google)", "https://github.com/marella/material-icons", "https://github.com/marella/material-icons?tab=Apache-2.0-1-ov-file")]
     public class PackIconMaterialDesign : PackIconControlBase
     {
-        public PackIconMaterialDesign()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMaterialDesignKind> KindProperty
             = AvaloniaProperty.Register<PackIconMaterialDesign, PackIconMaterialDesignKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.MaterialDesign
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconMaterialDesignKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

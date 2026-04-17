@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Typicons
     [MetaData("Typicons", "https://www.s-ings.com/typicons/", "https://github.com/stephenhutchings/typicons.font/blob/master/LICENCE.md")]
     public class PackIconTypicons : PackIconControlBase
     {
-        public PackIconTypicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconTypiconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconTypicons, PackIconTypiconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Typicons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconTypiconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.PicolIcons
     [MetaData("PICOL Icons", "https://github.com/PicolSigns/Icons", "https://github.com/PicolSigns/Icons/blob/master/LICENSE")]
     public class PackIconPicolIcons : PackIconControlBase
     {
-        public PackIconPicolIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconPicolIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconPicolIcons, PackIconPicolIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.PicolIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconPicolIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

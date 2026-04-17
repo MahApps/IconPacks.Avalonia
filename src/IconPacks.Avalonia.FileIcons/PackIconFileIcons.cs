@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.FileIcons
     [MetaData("File Icons", "https://github.com/file-icons/icons", "https://github.com/file-icons/atom/blob/master/LICENSE.md")]
     public class PackIconFileIcons : PackIconControlBase
     {
-        public PackIconFileIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFileIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconFileIcons, PackIconFileIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.FileIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconFileIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Ionicons
     [MetaData("Ionicons", "https://ionicons.com/", "https://github.com/ionic-team/ionicons/blob/master/LICENSE")]
     public class PackIconIonicons : PackIconControlBase
     {
-        public PackIconIonicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconIoniconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconIonicons, PackIconIoniconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Ionicons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconIoniconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

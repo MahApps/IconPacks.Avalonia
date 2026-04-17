@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.FontAwesome6
     [MetaData("Font Awesome Free v6", "https://fontawesome.com/", "https://fontawesome.com/license/free")]
     public class PackIconFontAwesome6 : PackIconControlBase
     {
-        public PackIconFontAwesome6()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFontAwesome6Kind> KindProperty
             = AvaloniaProperty.Register<PackIconFontAwesome6, PackIconFontAwesome6Kind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.FontAwesome6
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconFontAwesome6Kind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

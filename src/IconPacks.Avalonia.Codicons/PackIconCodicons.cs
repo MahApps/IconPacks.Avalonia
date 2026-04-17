@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Codicons
     [MetaData("Codicons", "https://github.com/microsoft/vscode-codicons", "https://github.com/microsoft/vscode-codicons/blob/main/LICENSE")]
     public class PackIconCodicons : PackIconControlBase
     {
-        public PackIconCodicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconCodiconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconCodicons, PackIconCodiconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Codicons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconCodiconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.MynaUIIcons
     [MetaData("MynaUI Icons", "https://github.com/praveenjuge/mynaui-icons", "https://github.com/praveenjuge/mynaui-icons?tab=MIT-1-ov-file")]
     public class PackIconMynaUIIcons : PackIconControlBase
     {
-        public PackIconMynaUIIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMynaUIIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconMynaUIIcons, PackIconMynaUIIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.MynaUIIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconMynaUIIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.GameIcons
     [MetaData("Game Icons", "https://github.com/game-icons/icons", "https://github.com/game-icons/icons?tab=License-1-ov-file")]
     public class PackIconGameIcons : PackIconControlBase
     {
-        public PackIconGameIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconGameIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconGameIcons, PackIconGameIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.GameIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconGameIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

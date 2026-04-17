@@ -1,4 +1,5 @@
-﻿using Avalonia.Markup.Xaml;
+﻿using System;
+using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 
 namespace IconPacks.Avalonia.Core
@@ -19,11 +20,6 @@ namespace IconPacks.Avalonia.Core
         /// Gets or sets the rotation (angle) for the icon.
         /// </summary>
         public double RotationAngle { get; set; } = 0d;
-
-        /// <summary>
-        /// Gets the path data for the given kind.
-        /// </summary>
-        protected abstract string GetPathData(object iconKind);
 
         /// <summary>
         /// Gets the ScaleTransform for the given kind.
@@ -54,11 +50,11 @@ namespace IconPacks.Avalonia.Core
         /// <summary>
         /// Gets the <see cref="DrawingGroup" /> object that will be used for the <see cref="DrawingImage" />.
         /// </summary>
-        protected virtual DrawingGroup GetDrawingGroup(object iconKind, IBrush foregroundBrush, string path)
+        protected virtual DrawingGroup GetDrawingGroup(object iconKind, IBrush foregroundBrush, StreamGeometry path)
         {
             var geometryDrawing = new GeometryDrawing
             {
-                Geometry = StreamGeometry.Parse(path),
+                Geometry = path,
                 Brush = foregroundBrush
             };
 
@@ -76,9 +72,9 @@ namespace IconPacks.Avalonia.Core
         /// </summary>
         protected IImage CreateImageSource(object iconKind, IBrush foregroundBrush)
         {
-            var path = this.GetPathData(iconKind);
+            var path = PackIconGeometryCache.GetOrAdd((Enum)iconKind);
 
-            if (string.IsNullOrEmpty(path))
+            if (path is null)
             {
                 return null;
             }

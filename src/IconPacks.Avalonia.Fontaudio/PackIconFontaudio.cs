@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Fontaudio
     [MetaData("Fontaudio", "https://github.com/fefanto/fontaudio", "https://github.com/fefanto/fontaudio#license")]
     public class PackIconFontaudio : PackIconControlBase
     {
-        public PackIconFontaudio()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFontaudioKind> KindProperty
             = AvaloniaProperty.Register<PackIconFontaudio, PackIconFontaudioKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Fontaudio
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconFontaudioKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

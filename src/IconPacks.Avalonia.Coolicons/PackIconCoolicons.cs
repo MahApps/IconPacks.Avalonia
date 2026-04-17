@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Coolicons
     [MetaData("Coolicons", "https://github.com/krystonschwarze/coolicons", "https://github.com/krystonschwarze/coolicons/blob/master/README.md#license")]
     public class PackIconCoolicons : PackIconControlBase
     {
-        public PackIconCoolicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconCooliconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconCoolicons, PackIconCooliconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Coolicons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconCooliconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

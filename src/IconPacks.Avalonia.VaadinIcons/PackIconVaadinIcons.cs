@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.VaadinIcons
     [MetaData("Vaadin Icons", "https://vaadin.com/icons", "https://github.com/vaadin/web-components/tree/main/packages/icons#license")]
     public class PackIconVaadinIcons : PackIconControlBase
     {
-        public PackIconVaadinIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconVaadinIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconVaadinIcons, PackIconVaadinIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.VaadinIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconVaadinIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

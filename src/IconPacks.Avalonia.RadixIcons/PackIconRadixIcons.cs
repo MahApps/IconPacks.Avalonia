@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.RadixIcons
     [MetaData("Radix Icons", "https://github.com/radix-ui/icons", "https://github.com/radix-ui/icons?tab=MIT-1-ov-file#readme")]
     public class PackIconRadixIcons : PackIconControlBase
     {
-        public PackIconRadixIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconRadixIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconRadixIcons, PackIconRadixIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.RadixIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconRadixIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

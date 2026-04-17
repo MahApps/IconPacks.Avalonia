@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Fontisto
     [MetaData("Fontisto", "https://github.com/kenangundogan/fontisto", "https://github.com/kenangundogan/fontisto?tab=readme-ov-file#license")]
     public class PackIconFontisto : PackIconControlBase
     {
-        public PackIconFontisto()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFontistoKind> KindProperty
             = AvaloniaProperty.Register<PackIconFontisto, PackIconFontistoKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Fontisto
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconFontistoKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

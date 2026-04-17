@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.ForkAwesome
     [MetaData("Fork Awesome", "https://forkaweso.me/", "https://github.com/ForkAwesome/Fork-Awesome/blob/master/LICENSES")]
     public class PackIconForkAwesome : PackIconControlBase
     {
-        public PackIconForkAwesome()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconForkAwesomeKind> KindProperty
             = AvaloniaProperty.Register<PackIconForkAwesome, PackIconForkAwesomeKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.ForkAwesome
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconForkAwesomeKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

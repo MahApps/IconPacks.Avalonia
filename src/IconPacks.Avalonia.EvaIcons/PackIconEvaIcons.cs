@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.EvaIcons
     [MetaData("Eva Icons", "https://akveo.github.io/eva-icons/", "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt")]
     public class PackIconEvaIcons : PackIconControlBase
     {
-        public PackIconEvaIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconEvaIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconEvaIcons, PackIconEvaIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.EvaIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconEvaIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

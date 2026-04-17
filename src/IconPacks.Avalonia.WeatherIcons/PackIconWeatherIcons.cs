@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.WeatherIcons
     [MetaData("Weather Icons", "https://github.com/erikflowers/weather-icons", "https://github.com/erikflowers/weather-icons?tab=readme-ov-file#licensing")]
     public class PackIconWeatherIcons : PackIconControlBase
     {
-        public PackIconWeatherIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconWeatherIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconWeatherIcons, PackIconWeatherIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.WeatherIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconWeatherIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

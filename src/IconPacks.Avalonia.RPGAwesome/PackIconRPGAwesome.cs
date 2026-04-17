@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.RPGAwesome
     [MetaData("RPG Awesome", "http://nagoshiashumari.github.io/Rpg-Awesome/", "https://github.com/nagoshiashumari/Rpg-Awesome/blob/master/LICENSE.md")]
     public class PackIconRPGAwesome : PackIconControlBase
     {
-        public PackIconRPGAwesome()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconRPGAwesomeKind> KindProperty
             = AvaloniaProperty.Register<PackIconRPGAwesome, PackIconRPGAwesomeKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.RPGAwesome
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconRPGAwesomeKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

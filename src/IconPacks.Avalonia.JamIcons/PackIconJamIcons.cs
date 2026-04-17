@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.JamIcons
     [MetaData("Jam Icons", "https://jam-icons.com/", "https://github.com/michaelampr/jam/blob/master/LICENSE")]
     public class PackIconJamIcons : PackIconControlBase
     {
-        public PackIconJamIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconJamIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconJamIcons, PackIconJamIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.JamIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconJamIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

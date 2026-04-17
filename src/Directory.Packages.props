@@ -1,24 +1,20 @@
 <Project>
-    <!--
+  <!--
       This enabled central package management. 
       This allows for controling all NuGet packages within the Directory.Packages.props file
       See https://learn.microsoft.com/nuget/consume-packages/Central-Package-Management?WT.mc_id=DT-MVP-5003472
       -->
-
-    <PropertyGroup>
-        <!-- This property enables the Central Package Management feature -->
-        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-        <!-- https://learn.microsoft.com/nuget/consume-packages/Central-Package-Management?WT.mc_id=DT-MVP-5003472#transitive-pinning -->
-        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
-        <AvaloniaVersion>11.0.13</AvaloniaVersion>
-    </PropertyGroup>
-
-    <ItemGroup>
-        <PackageVersion Include="Avalonia" Version="$(AvaloniaVersion)" />
-
-        <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
-        <PackageVersion Include="JetBrains.Annotations" Version="2024.3.0" />
-        <PackageVersion Include="System.Text.Json" Version="8.0.5" />
-    </ItemGroup>
-
+  <PropertyGroup>
+    <!-- This property enables the Central Package Management feature -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- https://learn.microsoft.com/nuget/consume-packages/Central-Package-Management?WT.mc_id=DT-MVP-5003472#transitive-pinning -->
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <AvaloniaVersion>12.0.1</AvaloniaVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.202" />
+    <PackageVersion Include="JetBrains.Annotations" Version="2025.2.4" />
+    <PackageVersion Include="System.Text.Json" Version="10.0.6" />
+  </ItemGroup>
 </Project>

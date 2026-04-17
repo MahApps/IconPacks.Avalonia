@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.MingCuteIcons
     [MetaData("MingCute Icon", "https://github.com/Richard9394/MingCute", "https://github.com/Richard9394/MingCute?tab=Apache-2.0-1-ov-file")]
     public class PackIconMingCuteIcons : PackIconControlBase
     {
-        public PackIconMingCuteIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMingCuteIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconMingCuteIcons, PackIconMingCuteIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.MingCuteIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconMingCuteIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Modern
     [MetaData("Modern UI Icons", "https://github.com/Templarian/WindowsIcons", "https://github.com/Templarian/WindowsIcons/blob/master/WindowsPhone/license.txt")]
     public class PackIconModern : PackIconControlBase
     {
-        public PackIconModern()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconModernKind> KindProperty
             = AvaloniaProperty.Register<PackIconModern, PackIconModernKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Modern
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconModernKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

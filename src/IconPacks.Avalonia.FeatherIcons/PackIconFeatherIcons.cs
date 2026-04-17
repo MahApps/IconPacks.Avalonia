@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.FeatherIcons
     [MetaData("Feather Icons", "https://feathericons.com/", "https://github.com/feathericons/feather?tab=MIT-1-ov-file#readme")]
     public class PackIconFeatherIcons : PackIconControlBase
     {
-        public PackIconFeatherIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFeatherIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconFeatherIcons, PackIconFeatherIconsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.FeatherIcons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconFeatherIconsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

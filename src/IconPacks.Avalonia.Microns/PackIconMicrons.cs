@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Microns
     [MetaData("Microns", "https://github.com/stephenhutchings/microns", "https://github.com/stephenhutchings/microns?tab=License-1-ov-file#readme")]
     public class PackIconMicrons : PackIconControlBase
     {
-        public PackIconMicrons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMicronsKind> KindProperty
             = AvaloniaProperty.Register<PackIconMicrons, PackIconMicronsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Microns
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconMicronsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

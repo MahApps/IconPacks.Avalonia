@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.MaterialLight
     [MetaData("Material Design Icons Light", "https://github.com/Templarian/MaterialDesignLight", "https://github.com/Templarian/MaterialDesignLight/blob/master/LICENSE.md")]
     public class PackIconMaterialLight : PackIconControlBase
     {
-        public PackIconMaterialLight()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMaterialLightKind> KindProperty
             = AvaloniaProperty.Register<PackIconMaterialLight, PackIconMaterialLightKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.MaterialLight
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconMaterialLightKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {

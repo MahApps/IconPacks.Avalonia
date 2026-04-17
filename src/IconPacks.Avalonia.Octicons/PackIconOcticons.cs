@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.Core.Attributes;
 
@@ -12,11 +11,6 @@ namespace IconPacks.Avalonia.Octicons
     [MetaData("Primer Octicons (GitHub)", "https://github.com/primer/octicons", "https://github.com/primer/octicons?tab=MIT-1-ov-file#readme")]
     public class PackIconOcticons : PackIconControlBase
     {
-        public PackIconOcticons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconOcticonsKind> KindProperty
             = AvaloniaProperty.Register<PackIconOcticons, PackIconOcticonsKind>(nameof(Kind));
 
@@ -50,9 +44,7 @@ namespace IconPacks.Avalonia.Octicons
         {
             if (Kind != default)
             {
-                string data = null;
-                PackIconDataFactory<PackIconOcticonsKind>.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                this.Data = PackIconGeometryCache.GetOrAdd(Kind);
             }
             else
             {
