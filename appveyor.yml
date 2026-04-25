@@ -4,6 +4,7 @@ branches:
   only:
     - develop
     - main
+    - /\d*\.\d*\.\d*/
 
 environment:
   # bad, but without this, gitversion doesn't work anymore
