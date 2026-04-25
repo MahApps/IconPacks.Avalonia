@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Modern
     [MetaData("Modern UI Icons", "https://github.com/Templarian/WindowsIcons", "https://github.com/Templarian/WindowsIcons/blob/master/WindowsPhone/license.txt")]
     public class PackIconModern : PackIconControlBase
     {
-        public PackIconModern()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconModernKind> KindProperty
             = AvaloniaProperty.Register<PackIconModern, PackIconModernKind>(nameof(Kind));
 

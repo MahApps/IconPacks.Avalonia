@@ -15,6 +15,7 @@
                     <Path x:Name="PART_IconPath"
                           Data="{TemplateBinding Data}"
                           Stretch="Uniform"
+                          Fill="{TemplateBinding Foreground}"
                           UseLayoutRounding="False" />
                 </Viewbox>
             </Grid>
@@ -31,27 +32,6 @@
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Template" Value="{DynamicResource IconPacks.Avalonia.PackIconControlBase.Template}" />
-
-        <!-- icon is filled -->
-        <Style Selector="^:icon-filled /template/ Path#PART_IconPath">
-            <Setter Property="Fill" Value="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
-        </Style>
-
-        <!-- icon is outlined -->
-        <Style Selector="^:icon-outlined /template/ Path#PART_IconPath">
-            <Setter Property="Stroke" Value="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
-            <Setter Property="StrokeThickness" Value="2" />
-            <Setter Property="StrokeLineCap" Value="Round" />
-            <Setter Property="StrokeJoin" Value="Round" />
-            <Setter Property="Width" Value="24" />
-            <Setter Property="Height" Value="24" />
-            <Setter Property="Margin" Value="1" />
-        </Style>
-
-        <!-- flipped icon data -->
-        <Style Selector="^:icon-data-flipped-vertically /template/ Viewbox#PART_ViewBox">
-            <Setter Property="RenderTransform" Value="scale(1, -1)" />
-        </Style>
     </ControlTheme>
 
     <ControlTheme x:Key="{x:Type iconPacks:PackIconControlBase}"

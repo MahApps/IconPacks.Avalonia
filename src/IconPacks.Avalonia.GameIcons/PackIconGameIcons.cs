@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.GameIcons
     [MetaData("Game Icons", "https://github.com/game-icons/icons", "https://github.com/game-icons/icons?tab=License-1-ov-file")]
     public class PackIconGameIcons : PackIconControlBase
     {
-        public PackIconGameIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconGameIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconGameIcons, PackIconGameIconsKind>(nameof(Kind));
 

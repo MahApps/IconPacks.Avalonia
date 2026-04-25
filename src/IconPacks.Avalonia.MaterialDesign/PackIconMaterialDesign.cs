@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.MaterialDesign
     [MetaData("Material Icons (Google)", "https://github.com/marella/material-icons", "https://github.com/marella/material-icons?tab=Apache-2.0-1-ov-file")]
     public class PackIconMaterialDesign : PackIconControlBase
     {
-        public PackIconMaterialDesign()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMaterialDesignKind> KindProperty
             = AvaloniaProperty.Register<PackIconMaterialDesign, PackIconMaterialDesignKind>(nameof(Kind));
 

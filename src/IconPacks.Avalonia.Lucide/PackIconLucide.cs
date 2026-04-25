@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Lucide
     [MetaData("Lucide Icons", "https://github.com/lucide-icons/lucide", "https://github.com/lucide-icons/lucide?tab=ISC-1-ov-file#readme")]
     public class PackIconLucide : PackIconControlBase
     {
-        public PackIconLucide()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconLucideKind> KindProperty
             = AvaloniaProperty.Register<PackIconLucide, PackIconLucideKind>(nameof(Kind));
 

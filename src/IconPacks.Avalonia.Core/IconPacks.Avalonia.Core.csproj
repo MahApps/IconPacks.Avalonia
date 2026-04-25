@@ -3,8 +3,15 @@
     <PropertyGroup>
         <AssemblyName>IconPacks.Avalonia.Core</AssemblyName>
         <Title>IconPacks.Avalonia.Core</Title>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <EnableTrimWarnings>true</EnableTrimWarnings>
+        <IsTrimmable>true</IsTrimmable>
+        <IsAotCompatible>true</IsAotCompatible>
+    </PropertyGroup>
+    
     <ItemGroup>
         <PackageReference Include="Avalonia" />
         <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" IncludeAssets="build;compile" />

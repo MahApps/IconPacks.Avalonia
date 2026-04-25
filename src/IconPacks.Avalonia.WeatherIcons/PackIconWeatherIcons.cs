@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.WeatherIcons
     [MetaData("Weather Icons", "https://github.com/erikflowers/weather-icons", "https://github.com/erikflowers/weather-icons?tab=readme-ov-file#licensing")]
     public class PackIconWeatherIcons : PackIconControlBase
     {
-        public PackIconWeatherIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconWeatherIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconWeatherIcons, PackIconWeatherIconsKind>(nameof(Kind));
 

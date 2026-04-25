@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.PicolIcons
     [MetaData("PICOL Icons", "https://github.com/PicolSigns/Icons", "https://github.com/PicolSigns/Icons/blob/master/LICENSE")]
     public class PackIconPicolIcons : PackIconControlBase
     {
-        public PackIconPicolIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconPicolIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconPicolIcons, PackIconPicolIconsKind>(nameof(Kind));
 

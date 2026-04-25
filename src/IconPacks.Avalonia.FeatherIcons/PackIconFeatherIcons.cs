@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.FeatherIcons
     [MetaData("Feather Icons", "https://feathericons.com/", "https://github.com/feathericons/feather?tab=MIT-1-ov-file#readme")]
     public class PackIconFeatherIcons : PackIconControlBase
     {
-        public PackIconFeatherIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFeatherIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconFeatherIcons, PackIconFeatherIconsKind>(nameof(Kind));
 

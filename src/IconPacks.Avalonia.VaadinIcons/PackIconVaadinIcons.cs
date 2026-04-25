@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.VaadinIcons
     [MetaData("Vaadin Icons", "https://vaadin.com/icons", "https://github.com/vaadin/web-components/tree/main/packages/icons#license")]
     public class PackIconVaadinIcons : PackIconControlBase
     {
-        public PackIconVaadinIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconVaadinIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconVaadinIcons, PackIconVaadinIconsKind>(nameof(Kind));
 

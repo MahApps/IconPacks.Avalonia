@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Fontisto
     [MetaData("Fontisto", "https://github.com/kenangundogan/fontisto", "https://github.com/kenangundogan/fontisto?tab=readme-ov-file#license")]
     public class PackIconFontisto : PackIconControlBase
     {
-        public PackIconFontisto()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFontistoKind> KindProperty
             = AvaloniaProperty.Register<PackIconFontisto, PackIconFontistoKind>(nameof(Kind));
 

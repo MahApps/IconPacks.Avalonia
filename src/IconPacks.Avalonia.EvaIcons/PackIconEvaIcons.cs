@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.EvaIcons
     [MetaData("Eva Icons", "https://akveo.github.io/eva-icons/", "https://github.com/akveo/eva-icons/blob/master/LICENSE.txt")]
     public class PackIconEvaIcons : PackIconControlBase
     {
-        public PackIconEvaIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconEvaIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconEvaIcons, PackIconEvaIconsKind>(nameof(Kind));
 

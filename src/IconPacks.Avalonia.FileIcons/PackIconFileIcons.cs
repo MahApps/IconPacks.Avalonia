@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.FileIcons
     [MetaData("File Icons", "https://github.com/file-icons/icons", "https://github.com/file-icons/atom/blob/master/LICENSE.md")]
     public class PackIconFileIcons : PackIconControlBase
     {
-        public PackIconFileIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconFileIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconFileIcons, PackIconFileIconsKind>(nameof(Kind));
 

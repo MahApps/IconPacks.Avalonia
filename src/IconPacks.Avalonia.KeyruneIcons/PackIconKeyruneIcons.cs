@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.KeyruneIcons
     [MetaData("Keyrune Icons", "https://github.com/andrewgioia/keyrune", "https://github.com/andrewgioia/keyrune?tab=License-1-ov-file")]
     public class PackIconKeyruneIcons : PackIconControlBase
     {
-        public PackIconKeyruneIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconKeyruneIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconKeyruneIcons, PackIconKeyruneIconsKind>(nameof(Kind));
 

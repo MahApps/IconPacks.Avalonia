@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.MemoryIcons
     [MetaData("Memory Icons", "https://pictogrammers.com/library/memory/", "https://github.com/Pictogrammers/Memory?tab=License-1-ov-file#readme")]
     public class PackIconMemoryIcons : PackIconControlBase
     {
-        public PackIconMemoryIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMemoryIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconMemoryIcons, PackIconMemoryIconsKind>(nameof(Kind));
 

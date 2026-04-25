@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Unicons
     [MetaData("Unicons", "https://github.com/Iconscout/unicons", "https://github.com/Iconscout/unicons?tab=readme-ov-file#license")]
     public class PackIconUnicons : PackIconControlBase
     {
-        public PackIconUnicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconUniconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconUnicons, PackIconUniconsKind>(nameof(Kind));
 

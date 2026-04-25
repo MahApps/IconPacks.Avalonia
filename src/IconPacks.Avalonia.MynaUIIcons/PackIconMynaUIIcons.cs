@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.MynaUIIcons
     [MetaData("MynaUI Icons", "https://github.com/praveenjuge/mynaui-icons", "https://github.com/praveenjuge/mynaui-icons?tab=MIT-1-ov-file")]
     public class PackIconMynaUIIcons : PackIconControlBase
     {
-        public PackIconMynaUIIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMynaUIIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconMynaUIIcons, PackIconMynaUIIconsKind>(nameof(Kind));
 

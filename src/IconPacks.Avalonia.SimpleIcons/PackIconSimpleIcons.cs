@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.SimpleIcons
     [MetaData("Simple Icons", "https://github.com/simple-icons/simple-icons", "https://github.com/simple-icons/simple-icons?tab=CC0-1.0-1-ov-file#readme")]
     public class PackIconSimpleIcons : PackIconControlBase
     {
-        public PackIconSimpleIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconSimpleIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconSimpleIcons, PackIconSimpleIconsKind>(nameof(Kind));
 

@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Ionicons
     [MetaData("Ionicons", "https://ionicons.com/", "https://github.com/ionic-team/ionicons/blob/master/LICENSE")]
     public class PackIconIonicons : PackIconControlBase
     {
-        public PackIconIonicons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconIoniconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconIonicons, PackIconIoniconsKind>(nameof(Kind));
 

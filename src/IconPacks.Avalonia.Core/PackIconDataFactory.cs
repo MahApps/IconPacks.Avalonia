@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text.Json;
-using System.Text.Json.Serialization.Metadata;
 using Avalonia.Platform;
 
 namespace IconPacks.Avalonia.Core
@@ -19,13 +18,20 @@ namespace IconPacks.Avalonia.Core
         public static IDictionary<TEnum, string> Create()
         {
             using var iconJsonStream = AssetLoader.Open(new Uri($"avares://{typeof(TEnum).Assembly.GetName().Name}/Resources/Icons.json"));
-#pragma warning disable IL2026
-            var options = new JsonSerializerOptions
+            var stringDict = JsonSerializer.Deserialize<Dictionary<string, string>>(
+                iconJsonStream, IconJsonContext.Default.DictionaryStringString) 
+                             ?? new Dictionary<string, string>();
+
+            var result = new Dictionary<TEnum, string>(stringDict.Count);
+            foreach (var kvp in stringDict)
             {
-                TypeInfoResolver = new DefaultJsonTypeInfoResolver()
-            };
-            return System.Text.Json.JsonSerializer.Deserialize<Dictionary<TEnum, string>>(iconJsonStream, options) ?? [];
-#pragma warning restore IL2026
+                if (Enum.TryParse<TEnum>(kvp.Key, out var enumKey))
+                {
+                    result[enumKey] = kvp.Value;
+                }
+            }
+
+            return result;
         }
     }
 }

@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.PixelartIcons
     [MetaData("Pixelarticons", "https://pixelarticons.com/", "https://github.com/halfmage/pixelarticons?tab=MIT-1-ov-file#readme")]
     public class PackIconPixelartIcons : PackIconControlBase
     {
-        public PackIconPixelartIcons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconPixelartIconsKind> KindProperty
             = AvaloniaProperty.Register<PackIconPixelartIcons, PackIconPixelartIconsKind>(nameof(Kind));
 

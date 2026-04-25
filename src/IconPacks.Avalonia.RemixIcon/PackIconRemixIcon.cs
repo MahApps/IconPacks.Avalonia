@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.RemixIcon
     [MetaData("Remix Icon", "https://remixicon.com/", "https://github.com/Remix-Design/RemixIcon/blob/master/License")]
     public class PackIconRemixIcon : PackIconControlBase
     {
-        public PackIconRemixIcon()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconRemixIconKind> KindProperty
             = AvaloniaProperty.Register<PackIconRemixIcon, PackIconRemixIconKind>(nameof(Kind));
 

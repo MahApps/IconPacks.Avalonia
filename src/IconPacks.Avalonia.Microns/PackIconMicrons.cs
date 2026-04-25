@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.Microns
     [MetaData("Microns", "https://github.com/stephenhutchings/microns", "https://github.com/stephenhutchings/microns?tab=License-1-ov-file#readme")]
     public class PackIconMicrons : PackIconControlBase
     {
-        public PackIconMicrons()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconMicronsKind> KindProperty
             = AvaloniaProperty.Register<PackIconMicrons, PackIconMicronsKind>(nameof(Kind));
 

@@ -12,11 +12,6 @@ namespace IconPacks.Avalonia.BoxIcons2
     [MetaData("Boxicons v2", "https://v2.boxicons.com/", "https://v2.boxicons.com/usage#license")]
     public class PackIconBoxIcons2 : PackIconControlBase
     {
-        public PackIconBoxIcons2()
-        {
-            UpdateIconPseudoClasses(true, false, false);
-        }
-
         public static readonly StyledProperty<PackIconBoxIcons2Kind> KindProperty
             = AvaloniaProperty.Register<PackIconBoxIcons2, PackIconBoxIcons2Kind>(nameof(Kind));
 
