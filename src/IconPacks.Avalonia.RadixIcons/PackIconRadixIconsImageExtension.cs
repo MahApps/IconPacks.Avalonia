@@ -1,6 +1,6 @@
 ﻿using System;
-using Avalonia.Markup.Xaml;
 using Avalonia.Media;
+using Avalonia.Metadata;
 using IconPacks.Avalonia.Core;
 
 namespace IconPacks.Avalonia.RadixIcons
@@ -21,18 +21,6 @@ namespace IconPacks.Avalonia.RadixIcons
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
             return CreateImageSource(this.Kind, this.Brush ?? Brushes.Black);
-        }
-
-        /// <inheritdoc />
-        protected override string GetPathData(object iconKind)
-        {
-            string data = null;
-            if (iconKind is PackIconRadixIconsKind kind)
-            {
-                PackIconDataFactory<PackIconRadixIconsKind>.DataIndex.Value?.TryGetValue(kind, out data);
-            }
-
-            return data;
         }
     }
 }

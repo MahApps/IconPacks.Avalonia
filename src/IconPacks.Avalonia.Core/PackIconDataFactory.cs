@@ -1,25 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Text.Json;
 using Avalonia.Platform;
 
 namespace IconPacks.Avalonia.Core
 {
-    public static class PackIconDataFactory<TEnum> where TEnum : struct, Enum
+    public static class PackIconDataFactory
     {
-        public static Lazy<ReadOnlyDictionary<TEnum, string>> DataIndex { get; }
-
-        static PackIconDataFactory()
-        {
-            DataIndex = new Lazy<ReadOnlyDictionary<TEnum, string>>(() => new ReadOnlyDictionary<TEnum, string>(Create()));
-        }
-
-        public static IDictionary<TEnum, string> Create()
+        public static IDictionary<TEnum, string> Create<TEnum>() where TEnum : struct, Enum
         {
             using var iconJsonStream = AssetLoader.Open(new Uri($"avares://{typeof(TEnum).Assembly.GetName().Name}/Resources/Icons.json"));
-            var stringDict = JsonSerializer.Deserialize<Dictionary<string, string>>(
-                iconJsonStream, IconJsonContext.Default.DictionaryStringString) 
+            var stringDict = JsonSerializer.Deserialize(
+                                 iconJsonStream, IconJsonContext.Default.DictionaryStringString) 
                              ?? new Dictionary<string, string>();
 
             var result = new Dictionary<TEnum, string>(stringDict.Count);
@@ -28,6 +20,30 @@ namespace IconPacks.Avalonia.Core
                 if (Enum.TryParse<TEnum>(kvp.Key, out var enumKey))
                 {
                     result[enumKey] = kvp.Value;
+                }
+            }
+
+            return result;
+        }
+        
+        public static IDictionary<Enum, string> Create(Type enumType)
+        {
+            using var iconJsonStream = AssetLoader.Open(new Uri($"avares://{enumType.Assembly.GetName().Name}/Resources/Icons.json"));
+            var stringDict = JsonSerializer.Deserialize<Dictionary<string, string>>(
+                                 iconJsonStream, IconJsonContext.Default.DictionaryStringString) 
+                             ?? new Dictionary<string, string>();
+
+            var result = new Dictionary<Enum, string>(stringDict.Count);
+            foreach (var kvp in stringDict)
+            {
+                try
+                {
+                    var enumKey = Enum.Parse(enumType, kvp.Key);
+                    result[(Enum)enumKey] = kvp.Value;
+                }
+                catch
+                {
+                    // ignored
                 }
             }
 

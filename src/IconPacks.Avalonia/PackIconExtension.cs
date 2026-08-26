@@ -1,6 +1,6 @@
 ﻿using System;
 using Avalonia.Data;
-using Avalonia.Markup.Xaml;
+using Avalonia.Metadata;
 using IconPacks.Avalonia.Core;
 using IconPacks.Avalonia.BootstrapIcons;
 using IconPacks.Avalonia.BoxIcons2;

@@ -1,6 +1,5 @@
 ﻿using System;
 using Avalonia;
-using Avalonia.Media;
 using IconPacks.Avalonia.Core;
 
 namespace IconPacks.Avalonia
@@ -40,16 +39,17 @@ namespace IconPacks.Avalonia
 
         protected override void UpdateData()
         {
-            if (Kind != default(Enum))
+            var kind = Kind;
+            
+            if (kind is null)
             {
-                string data = null;
-                PackIconControlDataFactory.DataIndex.Value?.TryGetValue(Kind, out data);
-                this.Data = data != null ? StreamGeometry.Parse(data) : null;
+                Data = null;
+                return;
             }
-            else
-            {
-                this.Data = null;
-            }
+
+            var geometry = PackIconGeometryCache.GetOrAdd(Kind);
+
+            Data = geometry;
         }
     }
 }

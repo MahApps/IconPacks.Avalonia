@@ -4,7 +4,6 @@ using Avalonia;
 using Avalonia.Animation;
 using Avalonia.Animation.Easings;
 using Avalonia.Controls;
-using Avalonia.Controls.Metadata;
 using Avalonia.Controls.Primitives;
 using Avalonia.Data;
 using Avalonia.Media;
@@ -147,7 +146,7 @@ namespace IconPacks.Avalonia.Core
                 false,
                 BindingMode.OneWay,
                 null,
-                (packIcon, value) =>
+                (_, value) =>
                 {
                     if (value < 0)
                     {
